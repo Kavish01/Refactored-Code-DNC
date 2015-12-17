@@ -1,0 +1,16 @@
+<div class="listNumberContainer" >
+
+<div class="Seatband">Number:</div>
+<div id="{{orientation}}" class="adaModeSecondTable">
+	<div class="seatFinderScroller">
+		<ul id="seatthelist">
+        <li ng-repeat="item in listItem track by $index"  ng-class="$index == 0?'seatFinderRowSelected selectedRow':''">{{item}}</li>
+			
+
+			
+		</ul>
+	</div>
+</div>
+<div class="topBlur"></div>
+<div class="bottomBlur"></div>
+</div>

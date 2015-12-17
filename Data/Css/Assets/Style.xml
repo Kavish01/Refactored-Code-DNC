@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sections>
+  <Section>
+    <Data AssetPath="Assets\Style\fonts/457764-DINEngschriftStd.eot" />
+    <Data AssetPath="Assets\Style\fonts/457764-DINEngschriftStd.svg" />
+    <Data AssetPath="Assets\Style\fonts/457764-DINEngschriftStd.ttf" />
+    <Data AssetPath="Assets\Style\fonts/457764-DINEngschriftStd.woff" />
+    <Data AssetPath="Assets\Style\fonts/agencyb-webfont.eot" />
+    <Data AssetPath="Assets\Style\fonts/agencyb-webfont.svg" />
+    <Data AssetPath="Assets\Style\fonts/agencyb-webfont.ttf" />
+    <Data AssetPath="Assets\Style\fonts/agencyb-webfont.woff" />
+    <Data AssetPath="Assets\Style\fonts/DINEngschriftStd.otf" />
+    <Data AssetPath="Assets\Style\fonts/DINEngschriftStd.ttf" />
+    <Data AssetPath="Assets\Style\fonts/DINEngschriftStd.woff" />
+    <Data AssetPath="Assets\Style\fonts/dinmd___-webfont.eot" />
+    <Data AssetPath="Assets\Style\fonts/dinmd___-webfont.svg" />
+    <Data AssetPath="Assets\Style\fonts/dinmd___-webfont.ttf" />
+    <Data AssetPath="Assets\Style\fonts/dinmd___-webfont.woff" />
+    <Data AssetPath="Assets\Style\fonts/dinrg___-webfont.eot" />
+    <Data AssetPath="Assets\Style\fonts/dinrg___-webfont.svg" />
+    <Data AssetPath="Assets\Style\fonts/dinrg___-webfont.ttf" />
+    <Data AssetPath="Assets\Style\fonts/dinrg___-webfont.woff" />
+    <Data AssetPath="Assets\Style\imgs/premium.png" />
+    <Data AssetPath="Assets\Style\imgs/seatFinderBack.png" />
+    <Data AssetPath="Assets\Style\imgs/vendorListingBg.gif" />
+  </Section>
+</Sections>

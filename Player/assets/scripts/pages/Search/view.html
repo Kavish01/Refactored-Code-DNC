@@ -1,0 +1,80 @@
+<div id="searchText" ng-show="searchText.length">Displaying results for  "{{searchText}}"</div>
+<div id="searchItemList">
+  
+  <div id="searchScrollers">
+    <ul id="searchthelist">
+
+    </ul>
+  </div>
+</div>
+  <div id="searchWrapper" >
+	<div id="containerSearch" ng-class="{true: 'adaModeSearchContainer', false:''}[( adaMode== true)]">
+    <div id="searchTextContainer">
+        <div id="headerSearch" ><img ng-click="searchDisable||searchAgain()" src="assets/imgs/icons/icon_search.svg"><div id="textSearch">SEARCH</div></div>
+        
+    <textarea id="write"  maxlength="25" autofocus></textarea>
+    <div id="headerClose"><div>close</div><img src="assets/imgs/icons/icon_hideButton.svg"/></div>
+    </div>
+    <ul id="keyboard">
+        
+        <li class="symbol" id="firstRow"><span class="off">1</span><span class="on">!</span></li>
+        <li class="symbol"><span class="off">2</span><span class="on">@</span></li>
+        <li class="symbol"><span class="off">3</span><span class="on">#</span></li>
+        <li class="symbol"><span class="off">4</span><span class="on">$</span></li>
+        <li class="symbol"><span class="off">5</span><span class="on">%</span></li>
+        <li class="symbol"><span class="off">6</span><span class="on">^</span></li>
+        <li class="symbol"><span class="off">7</span><span class="on">&amp;</span></li>
+        <li class="symbol"><span class="off">8</span><span class="on">*</span></li>
+        <li class="symbol"><span class="off">9</span><span class="on">(</span></li>
+        <li class="symbol"><span class="off">0</span><span class="on">)</span></li>
+  
+        
+        <li class="delete lastitem"></li>
+      
+        <li class="letter" id="secondRow">q</li>
+        <li class="letter">w</li>
+        <li class="letter">e</li>
+        <li class="letter">r</li>
+        <li class="letter">t</li>
+        <li class="letter">y</li>
+        <li class="letter">u</li>
+        <li class="letter">i</li>
+        <li class="letter">o</li>
+        <li class="letter">p</li>
+       
+        <li class="capslock"></li>
+        <li class="letter">a</li>
+        <li class="letter">s</li>
+        <li class="letter">d</li>
+        <li class="letter">f</li>
+        <li class="letter">g</li>
+        <li class="letter">h</li>
+        <li class="letter">j</li>
+        <li class="letter">k</li>
+        <li class="letter " >l</li>
+        <li class="right-shift lastitem thirdRowLast" style="background-color:white;color:black;"><img src="assets/imgs/icons/icon_search_withoutCircle.svg"/>Search</li>
+        <li class="letter fourthRow">z</li>
+        <li class="letter">x</li>
+        <li class="letter">c</li>
+        <li class="letter">v</li>
+        <li class="letter">b</li>
+        <li class="letter">n</li>
+        <li class="letter">m</li>
+        <li class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>
+        <li class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>
+        <li class="symbol"><span class="off">/</span><span class="on">?</span></li>
+        
+        <li class="space lastitem">&nbsp;</li>
+    </ul>
+</div>
+ 
+
+</div>
+
+<div class="noResult">
+<b>No results found</b></br>
+Please check your spelling or enter a different search term and try again.
+    </div>
+ 
+
+

@@ -1,0 +1,988 @@
+@font-face {
+font-family: 'AgencyFB-Bold';
+ src: url('../assets/fonts/agencyb-webfont.eot');
+        src: url('../assets/fonts/agencyb-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/agencyb-webfont.svg#AgencyFb') format('svg'),
+        url('../assets/fonts/agencyb-webfont.woff') format('woff'),
+        url('../assets/fonts/agencyb-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+@font-face {
+        font-family: "DIN Engschrift Std";
+        src: url('../assets/fonts/dinmd___-webfont.eot');
+        src: url('../assets/fonts/dinmd___-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/dinmd___-webfont.svg#DIN Engschrift Std') format('svg'),
+        url('../assets/fonts/dinmd___-webfont.woff') format('woff'),
+        url('../assets/fonts/dinmd___-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+@font-face {
+        font-family: "AgencyFb";
+        src: url('../assets/fonts/agencyb-webfont.eot');
+        src: url('../assets/fonts/agencyb-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/agencyb-webfont.svg#AgencyFb') format('svg'),
+        url('../assets/fonts/agencyb-webfont.woff') format('woff'),
+        url('../assets/fonts/agencyb-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+html, body {
+	
+  width: 100%;
+  height:100%;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.rightVendorData
+{
+  text-align: right;
+}
+
+.eventImg
+{
+ 
+height: 250px;
+width: 40%;
+float: right;
+margin-right: 30px;
+}
+.eventDescription
+{
+  width: 50%;
+  margin-left: 40px;
+}
+
+.instant
+{
+top: 198px;
+/* left: 15px; */
+position: absolute;
+
+background-color: #b8392a;
+width: 1024px;
+min-height: 65px;
+height: auto;
+overflow: hidden;
+opacity:0;
+color: white;
+font-size: 25px;
+ font-family: "DIN Engschrift Std";
+
+}
+#instantImage
+{
+  height: 45px;
+  margin-top:2%;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#instantMessage
+{
+  margin-top: 15px;
+}
+
+
+.operationAlert
+{
+top: 198px;
+/* left: 15px; */
+position: absolute!important;
+
+background-color: #b8392a;
+width: 1024px;
+
+height: 566px;
+overflow: hidden;
+opacity:0.93;
+color: white;
+font-size: 25px;
+ font-family: "DIN Engschrift Std";
+
+
+}
+
+.operationAlert img
+{
+width: 100px;
+margin-left: 462px;
+margin-top: 50px;
+margin-bottom: 60px;
+}
+#OperationAlertMessage
+{
+font-size: 25px;
+margin-left: 80px;
+  margin-right: 80px;
+  text-align: center;
+}
+ 
+ #OperationAlertTitle
+ {
+  font-size: 30px;
+  margin-bottom: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+ }
+
+
+#container {
+  width: 100%;
+  height: 700px;
+  background-image:url(../assets/imgs/vendorListingBg.gif);
+  background-size: 100% 134px;
+  background-repeat:no-repeat;
+  display:table;
+  border-spacing: 0px;
+}
+#location
+{
+ height: 54px;
+ padding-top:10px;
+width: 100%;
+background-color: black;
+
+}
+#leftLocation
+{
+ float:left;
+}
+#middleLocation
+{
+	font-family: "AgencyFb";
+	width: 100%;
+float:none;
+font-size: 21px;
+color: #ffffff;
+
+}
+#middleLocation img{
+	width:140px;
+	height:auto;
+	vertical-align:middle;
+}
+#middleLocation div{
+	display:inline-block;
+	height:100%;
+	width: auto;
+	vertical-align:middle;
+}
+
+#timeContainer
+{
+ width:100%;
+}
+#rightLocation
+{
+  float:right;
+}
+
+#rightTable,#leftTable
+{
+ 
+}
+#rightTable img,#leftTable img
+{
+ vertical-align:middle;
+height:31px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#rightLocationText, #leftLocationText 
+{
+	font-family: "AgencyFb";
+  display: inline-block;
+  vertical-align:middle;
+  font-size:35px;
+  color: #ffffff;
+}
+
+
+#content-container {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+ vertical-align:top;
+ overflow:hidden;
+}
+
+#content-container .contentContainer{
+	position:relative;
+	
+}
+#header {
+ 
+  width: 100%;
+  height: 134px;
+ 
+}
+#mapContent {
+  width: 1024px;
+ height:566px;
+}
+
+
+#aside {
+ 
+  height:auto;
+  display: table-cell;
+ vertical-align:top;
+
+}
+#aside .paidAds {
+	width:341px;
+	height:134px; 
+}
+#aside .paidAds img{
+	width:100%;
+	height:auto; 
+ 
+}
+.Row{
+  display: table;
+  
+  padding-left:40px;
+  padding-right: 40px;
+  width: 100%;
+  height:100%;
+  color: #ffffff;
+  position: absolute;
+  top:0;
+}
+
+.Row img
+{
+  height:100px;
+}
+
+#VendorContainer
+{
+color: white;
+position:relative;
+}
+.leftvendorLogo img, .rightvendorLogo img
+{
+	width:75px;
+  height:auto;
+}
+#vendorName
+{
+	font-family: "AgencyFb";
+font-size: 40px;
+font-weight:bold;
+}
+#vendorData
+{
+  display: table-cell;
+  vertical-align:middle;
+  padding-right: 30px;
+
+  height:134px;
+}
+
+#vendorDescription,#vendorTitle
+{
+	font-family: "AgencyFb";
+  font-size: 28px;
+  color:#b0b0b0;
+}
+#vendorTitle
+{
+  color:#ffffff;
+}
+#leftVendorDirection, #leftVendorImage, .rightvendorLogo ,.leftvendorLogo, #rightVendorDirection, #rightVendorImage{
+  display: table-cell;
+  width: 60px;
+  padding-right: 40px;
+   vertical-align: middle;
+}
+#leftVendorImage img, #rightVendorImage img
+{
+	width:75px;
+	height:auto;
+	}
+	
+	#leftVendorDirection img, #rightVendorDirection img
+{
+	width:45px;
+	height:auto;
+	}
+
+/*nearby module*/
+.nearbyRow{
+	  font-family: "DIN Engschrift Std";
+  display: table;
+  width: 100%;
+  height:100%;
+  color: #323232;
+  padding-top: 10px;
+padding-bottom: 10px;
+  
+}
+.nearbyRow >div{
+	display:table-cell;
+	height:100%;
+	vertical-align:middle;
+}
+
+#nearbyLeftVendorDirection img
+{
+	margin-right:5px;
+ margin-left:5px;
+  
+}
+#nearbyVendorName,#nearbyVendorDescription,#neabyLeftVendorImage,#neabyRightVendorImage
+{
+  height:auto;
+  text-align:left;
+
+}
+#neabyLeftVendorImage,#neabyRightVendorImage{
+	text-align:center;
+	width:46px;
+	
+	
+}
+#nearbyLeftVendorDirection,#nearbyRightVendorDirection{
+	width:30px;
+}
+#nearbyVendorName
+{
+	 font-family: "DIN Engschrift Std";
+  font-size: 20px;
+  color:#333333;
+width:190px;
+margin-top: 16px;
+}
+#nearbyVendorDescription
+{
+  font-size: 15px;
+  width:30%;
+  margin-top: 16px;
+}
+
+#neabyLeftVendorImage
+{
+  margin-right:15px;
+}
+#neabyLeftVendorImage img,#neabyRightVendorImage img
+{
+width: 35px;
+height: auto;
+}
+#nearbyRightVendorDirection img,#nearbyLeftVendorDirection img
+{
+width: 18px;
+height: auto;
+}
+.idlePlayModule {
+  position: absolute;
+ width: 1024px;
+height: 566px;
+  top: 200px;
+  z-index: 100;
+}
+
+#idleComp {
+  background-color: #000000;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#idleComp video, #idleComp img, #idleComp iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#searchWrapper{
+	position:absolute;
+	left:0px;
+	bottom:10px;
+	display:none;
+}
+.clearItem{
+	clear:left;
+
+}
+
+#foodType
+{
+  position: relative;
+
+margin-bottom: 5px;
+}
+
+
+
+#foodText
+{
+  display: inline-block;
+vertical-align: middle;
+height: 100%;
+margin-right: 20px;
+}
+
+.adaPanelHeight {
+height: 415px !important;
+}
+
+
+
+
+.rowtable img{
+  width:35px;
+}
+.rowtable .service
+{
+  width: 100px!important;
+}
+.rightArrow
+{
+  float: right;
+  padding-right: 30px;
+}
+
+.downArrow
+{
+  float: left;
+  width: 50px;
+}
+#findText
+{
+font-size: 30px;
+margin-left: 35px;
+color: #999999;
+font-family: "DIN Engschrift Std";
+margin-top: 25px;
+}
+
+.serviceName
+{
+  font-family: "DIN Engschrift Std";
+font-size: 20px;
+color: #333333;
+
+}
+.rowtable 
+{
+   font-family: "DIN Engschrift Std";
+font-size: 20px;
+color: #333333;
+}
+
+
+.moreTitle {
+    font-family: "DIN Engschrift Std";
+font-size: 15px;
+color: #333333;
+width: auto!important;
+margin-left: 20px;
+margin-right: 20px;
+border-top: 4px solid #c0c0c0;
+margin-bottom: 0px!important;
+}
+.moreTitle #titleText
+{
+  font-size: 20px;
+}
+.moreTitle img{
+  float:left;
+  margin-right: 10px;
+}
+
+#eventName
+{
+  width:250px!important;
+}
+#eventDate
+{
+  width:100px!important;
+  font-size: 12px;
+}
+#eventTime
+{
+  font-size: 12px;
+}
+#leafInfo
+{
+  line-height: 50px;
+font-size: 30px;
+width: 95%;
+margin-left: 2.5%;
+}
+
+.logohide
+{
+  display: none;
+}
+
+
+@media all and (min-width: 2000px){
+
+
+
+.instant
+{
+
+top: 560px;
+width: 2880px;
+font-size: 80px!important;
+min-height: 250px;
+
+}
+#instantImage
+{
+  height: 144px;
+  margin-top:2%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#instantMessage
+{
+  margin-top: 3%;
+}
+
+.operationAlert
+{
+
+top: 560px;
+width: 2880px;
+
+height: 1600px;
+
+}
+
+.operationAlert img
+{
+width: 315px;
+margin-left: 1280px;
+margin-top: 175px;
+margin-bottom: 200px;
+}
+#OperationAlertMessage
+{
+font-size: 60px;
+margin-left: 335px;
+  margin-right: 335px;
+}
+ 
+ #OperationAlertTitle
+ {
+  font-size: 90px;
+  margin-bottom: 120px;
+  margin-left: 300px;
+  margin-right: 300px;
+ }
+
+.moreTitle
+{
+margin-left: 40px;
+margin-right: 40px;
+font-size: 30px;
+padding-top: 15px;
+padding-bottom: 15px;
+position: relative;
+}
+.moreTitle img 
+{
+  width: 40px;
+}
+.moreTitle #titleText
+{
+  font-size: 45px;
+}
+#eventName
+{
+  width:800px!important;
+  font-size: 40px;
+  padding-left: 30px;
+}
+#eventDate
+{
+  width:250px!important;
+  font-size: 30px;
+  line-height: 40px;
+}
+#eventTime
+{
+  font-size: 30px;
+}
+
+
+  #moreServiceContainer {
+margin-left: 50px;
+margin-right: 50px;
+}
+
+.rowtable .service
+{
+  width: 200px!important;
+  padding-left: 30px;
+}
+.serviceName{
+  font-size: 40px;
+}
+.rowtable img{
+  width:100px;
+  margin-top: 15px;
+margin-bottom: 15px;
+}
+.infosubtext
+{
+  padding-left: 30px;
+}
+.rowtable
+{
+  font-size: 40px;
+  min-height:120px;
+}
+
+
+.adaPanelHeight {
+height: 1050px !important;
+}
+  .idlePlayModule {
+  position: absolute;
+width: 2880px;
+height: 1600px;
+top: 560px;
+z-index: 100;
+}
+#location {
+height: 144px;
+padding-top:50px;
+}
+#rightLocationText, #leftLocationText{
+	font-size: 100px;
+}
+#middleLocation{
+font-size:80px;
+}
+#middleLocation img{
+	width:auto;
+}
+#rightTable img, #leftTable img {
+	width:96px;
+	height:auto;
+}
+#header {
+height:368px;
+}
+#aside .paidAds {
+	height:307px;
+}
+#aside .paidAds  img{
+	width: 540px;
+margin-left: 50px;
+margin-top: 35px;
+}
+.paidAds img{
+	width:960px;
+
+}
+.freeAds ,.freeAds img{
+	width:960px;
+  height: 1600px;
+
+}
+#vendorData{
+	height:370px;
+}
+#container{
+	 background-size: 100% 368px;
+	height: 1970px;
+}
+#mapContent{
+	height:1600px;
+	width:100%;
+	/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #96A9BB 0%, #DBDBDB 50%, #DBDBDB 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #96A9BB 0%, #DBDBDB 50%, #DBDBDB 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #96A9BB 0%, #DBDBDB 50%, #DBDBDB 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #96A9BB), color-stop(0.5, #DBDBDB), color-stop(1, #DBDBDB));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #96A9BB 0%, #DBDBDB 50%, #DBDBDB 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #96A9BB 0%, #DBDBDB 50%, #DBDBDB 100%);
+}
+
+#mapContent img {
+height: 1600px;
+
+}
+#vendorName{
+	font-size:80px;
+	
+}
+
+#vendorTitle, #vendorDescription{
+	font-size:70px;
+}
+	#leftVendorDirection img, #rightVendorDirection img
+{
+	width:145px;
+	height:auto;
+	}
+	#leftVendorImage img, #rightVendorImage img
+{
+	width:250px;
+	height:250px;
+	}
+		.leftvendorLogo img, .rightvendorLogo img
+{
+	width:250px;
+	height:250px;
+	}
+	
+	#controlPanelUI {
+width: 1334px;
+/* height: 48vh; */
+/*height: 1050px;*/
+left: 100px;
+border-top: 5px solid #000;
+}
+
+#navigationContainer li {
+width: 200px;
+color: #323232;
+font-size: 30px;
+
+}
+#navigationContainer li img{
+width: 150px;
+}
+#scroller li{
+	line-height:70px;
+}
+.nearbyRow{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+#nearbyVendorName{
+	font-size: 40px;
+width: 640px;
+padding-left:45px;
+
+}
+#nearbyVendorDescription {
+	font-size:30px;
+  width:auto;
+ line-height: 40px;
+}
+#neabyLeftVendorImage, #neabyRightVendorImage {
+
+text-align:center;
+width:134px;
+
+}
+#neabyLeftVendorImage
+{
+	margin-right:30px;}
+	#nearbyRightVendorDirection
+	{
+		margin-right:30px;}
+#neabyLeftVendorImage img, #neabyRightVendorImage img{
+ width:100px;
+}
+#nearbyRightVendorDirection , #nearbyLeftVendorDirection  {
+
+text-align:left;
+width:50px;
+
+}
+#nearbyRightVendorDirection img, #nearbyLeftVendorDirection img{
+	width:50px;
+	
+	
+}
+
+#foodType
+{
+  position: relative;
+
+margin-bottom: 55px;
+}
+
+
+#foodHeader
+{
+  font-size: 45px;
+
+height: 100px;
+}
+
+#vendorDetailContent
+{
+  float: left;
+  width:50%;
+  font-size: 50px;
+  font-family: "DIN Engschrift Std";
+}
+	#vendorDetailImage
+  {
+    text-align: right;
+  }
+  #menuName
+  {
+    float: left;
+    width: 50%;
+  }
+  #vendorDetail
+  {
+  height: 400px;
+width: 85%;
+left: 15%;
+margin-top: 100px;
+position: relative; 
+}
+#vendorDetail button
+{
+ position: absolute;
+bottom: 0px;
+height: 15%;
+font-size: 36px;
+width: 100%;
+left: 0;
+background-color: black;
+color: white;
+}
+
+#hideEvent img
+{
+  height: 40px;
+float: right;
+margin-left: 20px;
+margin-top: 7px;
+
+}
+
+.eventDetails
+{
+  margin-top: 25px;
+
+}
+#hideEvent div
+{
+float: right;
+}
+#hideEvent
+{
+font-size: 40px;
+margin-bottom: 35px;
+height: 50px;
+padding-bottom: 20px;
+font-family: "DIN Engschrift Std";
+margin-right: 30px;
+}
+
+
+  #vendorDetailRow
+  {
+    height:50px;
+    margin-top: 10px;
+    margin-bottom:10px;
+  }
+  .rightArrow img
+  {
+    width: 40px;
+margin-top: 100%;
+  }
+.hide
+{
+  width: 300px;
+}
+  #bankLogo
+  {
+    height: 250px;
+    width: 650px;
+    margin-left: 300px;
+    margin-top: 60px;
+
+    border-left: 4px solid #5c5c5c;
+  }
+
+  #middleLocation div
+  {
+    margin-left: 60px;
+font-size: 70px;
+font-weight: bold;
+  }
+  #middleLocation img{
+    height: 85px;
+  }
+  .downArrow img
+  {
+  width: 40px;
+height: auto;
+
+  }
+
+.eventSlide
+{
+  margin-bottom: 60px;
+}
+
+#rightVendorDirection img
+{
+  margin-right: 50px;
+}
+.insideButton img
+{
+  float: right;
+width: 40px;
+height: auto;
+margin-top: 10px;
+margin-right: 35px;
+  
+}
+.logohide
+{
+  display: none!important;
+}
+
+.leafImage
+{
+  height: 200px;
+width: 95%;
+margin-left: 2.5%;
+margin-top: 30px;
+margin-bottom: 30px
+}
+
+#levelImage
+{
+ width: 125px;
+height: 125px!important;
+z-index: 400;
+position: absolute;
+margin-left: 2755px;
+}
+
+}

@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sections>
+  <Section DDId= "DDN1" CurrentFloor="4" NearEsc="Escalator12">
+   <DNode Name="LOG (LOGE)" >
+   <seats >
+   <seat Range="All" Floor="4" PopMsg="Add your Row and Seat Numbers to recommend directions." PanelMsg=""></seat>
+   </seats>
+   </DNode>
+    <DNode Name="BAL (BALCONY)" >
+   <seats >
+   <seat Range="All" Floor="7" PopMsg="Take Escalator up to Level 7" PanelMsg="Your selection is on the 7th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="CLB (CLUB)" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="FLR (FLOOR)" >
+   <seats >
+   <seat Range="All" Floor="0" PopMsg="Proceed to closest Loge entrance" PanelMsg="Your selection is on the floor level. Please go to the nearest Loge entrance and proceed to the floor."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="LEVEL 9 (PROMENADE)" >
+   <seats >
+   <seat Range="All" Floor="9" PopMsg="Take Escalator up to Level 9" PanelMsg="Your selection is on the 9th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Club Seating" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Executive Suites" >
+   <seats >
+   <seat Range="501-553" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   <seat Range="602-651" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="The Heineken Boardroom" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="The Lofts" >
+   <seats >
+   <seat Range="All" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="AT&amp;T Sports Deck" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+  </Section>
+  <Section DDId= "DDN2" CurrentFloor="4" NearEsc="Escalator13">
+    <DNode Name="LOG (LOGE)" >
+   <seats >
+   <seat Range="All" Floor="4" PopMsg="Add your Row and Seat Numbers to recommend directions." PanelMsg=""></seat>
+   </seats>
+   </DNode>
+    <DNode Name="BAL (BALCONY)" >
+   <seats >
+   <seat Range="All" Floor="7" PopMsg="Take Escalator up to Level 7" PanelMsg="Your selection is on the 7th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="CLB (CLUB)" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="FLR (FLOOR)" >
+   <seats >
+   <seat Range="All" Floor="0" PopMsg="Proceed to closest Loge entrance" PanelMsg="Your selection is on the floor level. Please go to the nearest Loge entrance and proceed to the floor."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="LEVEL 9 (PROMENADE)" >
+   <seats >
+   <seat Range="All" Floor="9" PopMsg="Take Escalator up to Level 9" PanelMsg="Your selection is on the 9th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Club Seating" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Executive Suites" >
+   <seats >
+   <seat Range="501-553" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   <seat Range="602-651" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="The Heineken Boardroom" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="The Lofts" >
+   <seats >
+   <seat Range="All" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="AT&amp;T Sports Deck" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+  </Section>
+  <Section DDId= "DDFZE" CurrentFloor="4" NearEsc="Escalator11">
+    <DNode Name="LOG (LOGE)" >
+   <seats >
+   <seat Range="All" Floor="4" PopMsg="Add your Row and Seat Numbers to recommend directions." PanelMsg=""></seat>
+   </seats>
+   </DNode>
+    <DNode Name="BAL (BALCONY)" >
+   <seats >
+   <seat Range="All" Floor="7" PopMsg="Take Escalator up to Level 7" PanelMsg="Your selection is on the 7th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="CLB (CLUB)" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="FLR (FLOOR)" >
+   <seats >
+   <seat Range="All" Floor="0" PopMsg="Proceed to closest Loge entrance" PanelMsg="Your selection is on the floor level. Please go to the nearest Loge entrance and proceed to the floor."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="LEVEL 9 (PROMENADE)" >
+   <seats >
+   <seat Range="All" Floor="9" PopMsg="Take Escalator up to Level 9" PanelMsg="Your selection is on the 9th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Club Seating" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Executive Suites" >
+   <seats >
+   <seat Range="501-553" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   <seat Range="602-651" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="The Heineken Boardroom" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="The Lofts" >
+   <seats >
+   <seat Range="All" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="AT&amp;T Sports Deck" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+  </Section>
+  <Section DDId= "DDFZW" CurrentFloor="4" NearEsc="Escalator9">
+    <DNode Name="LOG (LOGE)" >
+   <seats >
+   <seat Range="All" Floor="4" PopMsg="Add your Row and Seat Numbers to recommend directions." PanelMsg=""></seat>
+   </seats>
+   </DNode>
+    <DNode Name="BAL (BALCONY)" >
+   <seats >
+   <seat Range="All" Floor="7" PopMsg="Take Escalator up to Level 7" PanelMsg="Your selection is on the 7th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="CLB (CLUB)" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="FLR (FLOOR)" >
+   <seats >
+   <seat Range="All" Floor="0" PopMsg="Proceed to closest Loge entrance" PanelMsg="Your selection is on the floor level. Please go to the nearest Loge entrance and proceed to the floor."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="LEVEL 9 (PROMENADE)" >
+   <seats >
+   <seat Range="All" Floor="9" PopMsg="Take Escalator up to Level 9" PanelMsg="Your selection is on the 9th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Club Seating" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Executive Suites" >
+   <seats >
+   <seat Range="501-553" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   <seat Range="602-651" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="The Heineken Boardroom" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="The Lofts" >
+   <seats >
+   <seat Range="All" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="AT&amp;T Sports Deck" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+  </Section>
+  <Section DDId= "Demo DDN1" CurrentFloor="4" NearEsc="Escalator12">
+    <DNode Name="LOG (LOGE)" >
+   <seats >
+   <seat Range="All" Floor="4" PopMsg="Add your Row and Seat Numbers to recommend directions." PanelMsg=""></seat>
+   </seats>
+   </DNode>
+    <DNode Name="BAL (BALCONY)" >
+   <seats >
+   <seat Range="All" Floor="7" PopMsg="Take Escalator up to Level 7" PanelMsg="Your selection is on the 7th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="CLB (CLUB)" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="FLR (FLOOR)" >
+   <seats >
+   <seat Range="All" Floor="0" PopMsg="Proceed to closest Loge entrance" PanelMsg="Your selection is on the floor level. Please go to the nearest Loge entrance and proceed to the floor."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="LEVEL 9 (PROMENADE)" >
+   <seats >
+   <seat Range="All" Floor="9" PopMsg="Take Escalator up to Level 9" PanelMsg="Your selection is on the 9th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Club Seating" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Executive Suites" >
+   <seats >
+   <seat Range="501-553" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   <seat Range="602-651" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="The Heineken Boardroom" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="The Lofts" >
+   <seats >
+   <seat Range="All" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="AT&amp;T Sports Deck" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+  </Section>
+  <Section DDId= "Demo DDN2" CurrentFloor="4" NearEsc="Escalator13">
+    <DNode Name="LOG (LOGE)" >
+   <seats >
+   <seat Range="All" Floor="4" PopMsg="Add your Row and Seat Numbers to recommend directions." PanelMsg=""></seat>
+   </seats>
+   </DNode>
+    <DNode Name="BAL (BALCONY)" >
+   <seats >
+   <seat Range="All" Floor="7" PopMsg="Take Escalator up to Level 7" PanelMsg="Your selection is on the 7th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="CLB (CLUB)" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="FLR (FLOOR)" >
+   <seats >
+   <seat Range="All" Floor="0" PopMsg="Proceed to closest Loge entrance" PanelMsg="Your selection is on the floor level. Please go to the nearest Loge entrance and proceed to the floor."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="LEVEL 9 (PROMENADE)" >
+   <seats >
+   <seat Range="All" Floor="9" PopMsg="Take Escalator up to Level 9" PanelMsg="Your selection is on the 9th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Club Seating" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Executive Suites" >
+   <seats >
+   <seat Range="501-553" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   <seat Range="602-651" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="The Heineken Boardroom" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="The Lofts" >
+   <seats >
+   <seat Range="All" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="AT&amp;T Sports Deck" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+  </Section>
+  <Section DDId= "Demo DDFZE" CurrentFloor="4" NearEsc="Escalator11">
+    <DNode Name="LOG (LOGE)" >
+   <seats >
+   <seat Range="All" Floor="4" PopMsg="Add your Row and Seat Numbers to recommend directions." PanelMsg=""></seat>
+   </seats>
+   </DNode>
+    <DNode Name="BAL (BALCONY)" >
+   <seats >
+   <seat Range="All" Floor="7" PopMsg="Take Escalator up to Level 7" PanelMsg="Your selection is on the 7th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="CLB (CLUB)" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="FLR (FLOOR)" >
+   <seats >
+   <seat Range="All" Floor="0" PopMsg="Proceed to closest Loge entrance" PanelMsg="Your selection is on the floor level. Please go to the nearest Loge entrance and proceed to the floor."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="LEVEL 9 (PROMENADE)" >
+   <seats >
+   <seat Range="All" Floor="9" PopMsg="Take Escalator up to Level 9" PanelMsg="Your selection is on the 9th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Club Seating" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Executive Suites" >
+   <seats >
+   <seat Range="501-553" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   <seat Range="602-651" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="The Heineken Boardroom" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="The Lofts" >
+   <seats >
+   <seat Range="All" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="AT&amp;T Sports Deck" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+  </Section>
+  <Section DDId= "Demo DDFZW" CurrentFloor="4" NearEsc="Escalator9">
+    <DNode Name="LOG (LOGE)" >
+   <seats >
+   <seat Range="All" Floor="4" PopMsg="Add your Row and Seat Numbers to recommend directions." PanelMsg=""></seat>
+   </seats>
+   </DNode>
+    <DNode Name="BAL (BALCONY)" >
+   <seats >
+   <seat Range="All" Floor="7" PopMsg="Take Escalator up to Level 7" PanelMsg="Your selection is on the 7th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="CLB (CLUB)" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="FLR (FLOOR)" >
+   <seats >
+   <seat Range="All" Floor="0" PopMsg="Proceed to closest Loge entrance" PanelMsg="Your selection is on the floor level. Please go to the nearest Loge entrance and proceed to the floor."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="LEVEL 9 (PROMENADE)" >
+   <seats >
+   <seat Range="All" Floor="9" PopMsg="Take Escalator up to Level 9" PanelMsg="Your selection is on the 9th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Club Seating" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Executive Suites" >
+   <seats >
+   <seat Range="501-553" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   <seat Range="602-651" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="The Heineken Boardroom" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="The Lofts" >
+   <seats >
+   <seat Range="All" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="AT&amp;T Sports Deck" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+  </Section>
+  <Section DDId= "Demo DDN3" CurrentFloor="4" NearEsc="Escalator13">
+    <DNode Name="LOG (LOGE)" >
+   <seats >
+   <seat Range="All" Floor="4" PopMsg="Add your Row and Seat Numbers to recommend directions." PanelMsg=""></seat>
+   </seats>
+   </DNode>
+    <DNode Name="BAL (BALCONY)" >
+   <seats >
+   <seat Range="All" Floor="7" PopMsg="Take Escalator up to Level 7" PanelMsg="Your selection is on the 7th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="CLB (CLUB)" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="FLR (FLOOR)" >
+   <seats >
+   <seat Range="All" Floor="0" PopMsg="Proceed to closest Loge entrance" PanelMsg="Your selection is on the floor level. Please go to the nearest Loge entrance and proceed to the floor."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="LEVEL 9 (PROMENADE)" >
+   <seats >
+   <seat Range="All" Floor="9" PopMsg="Take Escalator up to Level 9" PanelMsg="Your selection is on the 9th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Club Seating" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="Executive Suites" >
+   <seats >
+   <seat Range="501-553" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   <seat Range="602-651" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="The Heineken Boardroom" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+    <DNode Name="The Lofts" >
+   <seats >
+   <seat Range="All" Floor="6" PopMsg="Take Escalator up to Level 6" PanelMsg="Your selection is on the 6th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+   <DNode Name="AT&amp;T Sports Deck" >
+   <seats >
+   <seat Range="All" Floor="5" PopMsg="Take Escalator up to Level 5" PanelMsg="Your selection is on the 5th floor. Please go up on the nearest escalator to find your destination."></seat>
+   </seats>
+   </DNode>
+  </Section>
+</Sections>

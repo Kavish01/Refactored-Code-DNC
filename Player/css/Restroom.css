@@ -1,0 +1,188 @@
+.restroomRow{
+font-family: "DIN Engschrift Std";
+display: table;
+width: 100%;
+height: 100%;
+color: #323232;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.restroomRow >div{
+	display: table-cell;
+height: 100%;
+vertical-align: middle;
+}
+
+#restroomLeftVendorDirection, #restroomRightVendorDirection {
+width: 30px;
+}
+#restroomLeftVendorDirection img
+{
+	width: 18px;
+height: auto;
+  
+}
+
+
+#restroomLeftVendorDirection img {
+margin-right: 5px;
+margin-left: 5px;
+}
+
+#restroomWrapper
+{
+position: absolute;
+z-index: 1;
+top: 0px;
+bottom: 0px;
+left: 5%;
+width: 90%%;
+overflow: auto;
+border-top: 1px solid #666;
+
+}
+
+
+
+
+
+#restroomScrollers {
+  position:absolute; z-index:1;
+/*  -webkit-touch-callout:none;*/
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  width:100%;
+  padding:0;
+}
+
+#restroomScrollers ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+  width:100%;
+  text-align:left;
+}
+
+
+#restroomScrollers li {
+  font-family: "DIN Engschrift Std";
+color: #333333;
+line-height: 20px;
+border-bottom: 4px dotted #dedede;
+font-size: 14px;
+}
+
+#restroomVendorName,#restroomVendorDescription,#restroomLeftVendorImage,#restroomRightVendorImage
+{
+  height:auto;
+  text-align: left;
+}
+#restroomVendorName
+{
+font-family: "DIN Engschrift Std";
+font-size: 20px;
+color: #333333;
+width: 190px;
+margin-top: 16px;
+}
+#restroomVendorDescription
+{
+  font-size: 15px;
+width: 30%;
+margin-top: 16px;
+}
+#restroomRightVendorDirection img
+{
+ margin-right:15px;
+  margin-left:5px;
+ margin-top:10px;
+}
+#restroomLeftVendorImage
+{
+  margin-right: 15px;
+}
+#restroomLeftVendorImage img,#restroomRightVendorImage img 
+{
+width: 35px;
+height: auto;
+}
+#restroomLeftVendorImage,#restroomRightVendorImage 
+{
+text-align: center;
+width: 46px;
+}
+#restroomRightVendorDirection img,#restroomLeftVendorDirection img
+{
+width: 18px;
+height: auto;
+}
+#restroomType
+{
+  position: relative;
+}
+
+
+@media all and (min-width: 2000px){
+
+.restroomRow
+{
+  padding-top: 20px;
+padding-bottom: 20px;
+}
+.restroomList
+{
+  line-height: 50px!important;
+}
+#restroomVendorName{
+font-size: 40px;
+width: 666px;
+padding-left: 45px;
+}
+#restroomVendorDescription {
+ font-size: 30px;
+width: auto;
+  
+}
+
+
+#containerrestroom
+{
+width: 100%;
+
+font-size: 40px;
+height: auto;
+position: absolute;
+z-index: 10;
+opacity: 1;
+bottom: 14%;
+}
+#restroomWrapper
+{
+
+border-top: 2px solid #666;
+
+}
+
+#restroomType
+{
+  position: relative;
+margin-top: 35px;
+margin-bottom: 55px;
+}
+
+#restroomLeftVendorImage, #restroomRightVendorImage{
+text-align: center;
+width: 134px;
+}
+#restroomLeftVendorImage img, #restroomRightVendorImage img {
+width: 100px;
+}
+#restroomRightVendorDirection, #restroomRightVendorDirection {
+text-align: left;
+width: 50px;
+}
+
+#restroomRightVendorDirection img, #restroomLeftVendorDirection img {
+width: 50px;
+}
+
+}

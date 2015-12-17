@@ -1,0 +1,132 @@
+<div id="extPage">
+<header class="extHeader">
+<div class="extHeaderCell defaultMsg">
+<div  ng-include='main' class="loadTmp"  ></div>
+</div>
+<div class="extHeaderCell rightSide">
+<div class="rightContainer" >
+
+	<div class="righttopContainer"><img src="assets/imgs/logo.jpg"/><div>{{currentTime}}</div></div>
+  		
+  		
+  		
+  		<div class="arrowIcon"><img src="assets/imgs/stairIcon.jpg"/></div>
+  		<div class="stairIcon"><img src="assets/imgs/arrowIcon.jpg"/></div>
+  		<div class="nrTxt">NEAREST STAIRCASE</div>
+  		
+        </div>
+</div>
+</header>
+
+
+
+
+  <div class="subway">
+<header>SUBWAY</header>
+<div class="subwayOverlay">
+<div subway-module  data-val="lst" class="subModule"  ng-repeat="lst in subArray " ></div>
+</div>
+<!-- hardcode data -->
+<div class="subModule" >
+<div class="subTable" class="orangeclass" >
+
+		<div class="subCell greenclassHardCd" >
+			<div class="numberBlock">10</div>
+			<div id="minutesBlock">MINS</div>
+
+		</div>
+	
+	<div class="subCell">
+     
+		<div id="boundBlock"><span class="rowColorHardCd">Green Line - </span>Inbound to B,C,D,E lines</div>
+		
+	 
+		<div id="timeBlock">Arrives Approximetely every 10 minutes</div>
+	</div>
+
+ 
+
+</div>
+</div>
+<div class="subModule" >
+<div class="subTable" class="orangeclass" >
+
+		<div class="subCell greenclassHardCd" >
+			<div class="numberBlock">10</div>
+			<div id="minutesBlock">MINS</div>
+
+		</div>
+	
+	<div class="subCell">
+     
+		<div id="boundBlock"><span class="rowColorHardCd">Green Line - </span>Outbound to Lechmere</div>
+		
+	 
+		<div id="timeBlock">Arrives Approximetely every 10 minutes</div>
+	</div>
+
+ 
+
+</div>
+</div>
+<!-- hardcode data ends -->
+<div class="clearfix"></div>
+  </div>
+
+   <div class="railway">
+<header>COMMUTER RAIL</header>
+
+<div class="Table" ng-if="railArray.length">
+    
+   
+        <div class="Cell">
+           Time
+        </div>
+        <div class="Cell">
+            Destination
+        </div>
+        <div class="Cell lowCell">
+            Train
+        </div>
+         
+         <div class="Cell lastcell">
+           Status
+        </div>
+    
+    <div ng-repeat="x in railArray | limitTo: 8 track by $index"  ng-class="['first', 'second'][$index %2]" class="Rowt">
+    
+   
+        <div class="Cell1">
+           {{x.satTime}}
+        </div>
+        <div class="Cell1">
+             {{x._TRN}}
+        </div>
+        <div class="Cell1">
+             {{x._Train}}
+        </div>
+        
+         <div class="Cell1 lastcell">
+            {{x.statuss}}
+        </div>
+    
+   
+      
+ </div>
+   
+      
+ </div>
+
+ <div class="subModule" ng-if="!railArray.length">
+    <div class="emptyIcon"><img src="assets/imgs/icons/alert.png"/></div>
+    <div class="emptyText">No predictions found. Last updated {{updatedTime}}</div>
+</div>
+  
+
+
+  
+
+
+  </div>
+
+</div>

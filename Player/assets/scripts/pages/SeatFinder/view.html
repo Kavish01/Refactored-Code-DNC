@@ -1,0 +1,88 @@
+<div id="seatFinderWrapper">
+<div class="nearEscScreenWrapper">
+<div class="topMsgtxt moreTitle" ><div  class="backButton" style="display:table" ng-click="showMainScreen();"><img src="assets/imgs/icons/arrowBall.svg"/><div  >Find another seat</div>
+
+</div></div>
+<div class="catBoxWrapper">
+
+<div class="catBox">
+<div class="catBox1">{{leftBtnValue}}</div>
+<div class="catBox2">{{lodgeValue}}</div>
+
+</div>
+<div class="panelMsg">{{PanelMsg}}</div>
+
+</div>
+</div>
+<div class="topMsgtxt moreTitle ttSeatFinder" ><div  class="backButton" ng-click="goBackTo();"><img src="assets/imgs/icons/arrowBall.svg"/><div  >Find another seat</div></div>{{topTxt}}</div>
+<div class="refinedScreen">
+
+
+<div class="refinedTable">
+<div><div>LOGE<p>{{lodgeValue}}</p></div><img src="assets/imgs/icons/arrowDotted.svg"/></div><div><div>ROW<p>{{rowValue}}</p></div><img src="assets/imgs/icons/arrowDotted.svg"/></div><div><div>SEAT<p>{{seatval}}</p></div></div>
+</div>
+<div class="refineFooter">Here's your seat location. Please refer to the map for directions. Thank you.</div>
+</div>
+
+<div id="seatFinderTable">
+
+<div id="buttonContainer" class="seatFinderColumn seatfinderNav">
+<div id="arrowContainer"></div>
+<div id="categorySeatFinderWrapper">
+<ul id="seatFinderContiner" ng-class="{true: 'seatfinderADA', false:''}[( adaMode== true)]">
+<li  id="{{$index}}" ng-click='handleClickEvent($event)' ng-repeat="item in listArray track by $index">{{item}}</li>
+
+</ul>
+</div>
+</div>
+
+<div id="numberList"   class="seatFinderColumn">
+<div list-module data-load="valueNumber" orientation="SeatListWrapper"></div>
+<div class="numberButton">
+<div class="insideButton" align="center" ng-click="goToNextSlide()" ><div class="buttonTab"><div>GO</div><img src="assets/imgs/icons/moreMenu_rightArrow.svg"></div></div>
+</div></div>
+</div>
+<!--Table for Second and Thirdcolumn-->
+<div id="seatFinderSecondTable" >
+<!--Second column-->
+<div id="secondList"   class="seatFinderColumn" >
+<div row-module data-load="rowNumber"  orientation="SeatListWrapper2"></div>
+<div class="col" align="left">
+<div class="insideButton" align="center" ng-click="backToSlide()" ><div class="buttonTab" ><img class="leftArrow" src="assets/imgs/icons/moreMenu_leftArrow.svg"><div>{{leftButtonValue}} &nbsp;{{lodgeValue}} &nbsp;</div></div></div>
+</div>
+</div>
+<!--Second column end-->
+
+<!--third column-->
+<div id="thirdList"   class="seatFinderColumn">
+<div seat-module data-load="seatNumber" orientation="SeatListWrapper1"></div>
+<div class="col" align="right">
+<div class="insideButton" align="center" ng-click="sendSpaceIdMap()"  ><div class="buttonTab"><div>REFINE</div><img src="assets/imgs/icons/moreMenu_rightArrow.svg"></div></div>
+
+</div>
+</div>
+<!--third column end-->
+</div>
+<!--End of table send and third column end-->
+</div>
+
+<div class="seatFinderFooter">
+<div class="footerContainer">
+<section  class="helpSection" ng-class="{true: 'helpContainerAda', false:''}[( adaMode== true)]" >
+<div ng-click="hideHelpSection();" class="hideDetail hideBut" ><div>hide</div>    <img src="assets/imgs/icons/icon_hideButton.svg"/></div>
+<div class="helpContainer" >
+
+<img class="mapImg" src="assets/imgs/helpImage.jpg"  />
+<div class="title" ng-click="showHelpContainer()"><img src="assets/imgs/icons/icon_help_off.svg" width="20" /><div>&nbsp;&nbsp;Help me find my section</div>
+<p class="description">Your section number can be found on your ticket lorem ipsum son dolor sit amet consectetuer.</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+</div>
+
+</div>

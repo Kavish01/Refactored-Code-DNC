@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="refresh" content="1200" />
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+<link href="css/normalize.css" rel="stylesheet" />
+<link href="css/keyborad.css" rel="stylesheet" />
+<link href="../Data/Css/Ionos.css" rel="stylesheet" />
+
+
+<script type="text/javascript">
+             var query = window.location.search.substring(1);
+             var globalResolutionForMap = 1000; /// need to change ,used in jquery panzoom js
+            var queryParam=query.split("=");
+           var nearbyScroll='';
+             var ip=queryParam[1];
+
+var myScroll;
+function loaded() {
+	//myScroll = new iScroll('wrapper');
+	//myScroll.isSpinningOn = false;
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+/* * * * * * * *
+ *
+ * Use this for high compatibility (iDevice + Android)
+ *
+ */
+document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 2000); }, false);
+/*
+ * * * * * * * */
+
+
+/* * * * * * * *
+ *
+ * Use this for iDevice only
+ *
+ */
+//document.addEventListener('DOMContentLoaded', loaded, false);
+/*
+ * * * * * * * */
+
+
+/* * * * * * * *
+ *
+ * Use this if nothing else works
+ *
+ */
+//window.addEventListener('load', setTimeout(function () { loaded(); }, 200), false);
+/*
+ * * * * * * * */
+
+</script>
+</head>
+<body ng-controller="appController" ng-app="IONOS">
+
+<div   ng-show="isIdleavb">
+  <div ng-idle-countdown="countdown" >
+    <div ng-show="idleStatus" data-time="IdlePlayTimeOut" idle-module  data-load="checkme.idleplayvalue" class="idlePlayModule">
+    </div>    
+  </div> 
+</div>
+ <header id="location" class="clearfix">
+ <div id="rightLocation" align="right">
+          <div id="rightTable">
+            <div id="rightLocationText">{{rightLocationText}}</div>
+            <img src="assets/imgs/icons/locationWhiteBG_rightArrow.svg"/>
+        </div>
+      </div>
+      <div id="leftLocation">
+        <div id="leftTable">
+          <img src="assets/imgs/icons/locationWhiteBG_leftArrow.svg"/>
+          <div id="leftLocationText">{{leftLocationText}}</div>
+        </div>      
+      </div>
+      <div id="middleLocation" align="center">
+        <img src="assets/imgs/icons/TDGardenLogo_Top.svg" />
+        <div id="timeContainer">{{currentTime}}</div>
+      </div>
+        
+  </header>
+<div id="container" class="clearfix">
+ 
+  <div id="content-container" class="clearfix">
+  <div class="contentContainer">
+    <div id="header" class="clearfix">
+      <div vendor-Module data-load="checkme.vendorlistvalue" class="clearfix"> </div>
+    </div>
+    
+    <div id="mapContent">
+      <img  id="levelImage" src="assets/imgs/Level4.png"/>
+   <div id="svg-container"></div>
+     </div>
+    
+      <!-- Control Panel UI Start-->
+    <section id="controlPanelUI" ng-class="{true: 'adaPanelHeight', false:''}[( adaMode== true)]" >
+      <div class="controlPanelContainer">
+        <header id="navigationPanelUI" ng-show="!adaMode">
+          <div id="navigationContainer">
+            <nav class="topNav">
+              <ul>
+                <li ng-click="handleButtonClick($event)">
+                  <img src="assets/imgs/icons/icon_nearBy_on.svg"/>
+                  <figcaption>NEARBY</figcaption></li>
+                <li id="Eat" ng-click="handleButtonClick($event)">
+                  <img src="assets/imgs/icons/icon_foodAndDrink_off.svg"/>
+                  <figcaption>FOOD & DRINK</figcaption></li>
+                <li id="Shops" ng-click="handleButtonClick($event)">
+                  <img src="assets/imgs/icons/icon_merchandise_off.svg"/>
+                  <figcaption>MERCHANDISE</figcaption></li>
+               <li  id="Seat" ng-click="handleButtonClick($event)">
+                  <img src="assets/imgs/icons/icon_seatFinder_off.svg"/>
+                 <figcaption>SEAT FINDER</figcaption></li>
+               <li id="Restroom"  ng-click="handleButtonClick($event)">
+                  <img src="assets/imgs/icons/icon_restroom_off.svg"/>
+                 <figcaption>RESTROOMS</figcaption></li>
+                
+                <li id="MoreSer" ng-click="handleButtonClick($event)">
+                  <img src="assets/imgs/icons/icon_more_off.svg"/>
+                  <figcaption>MORE</figcaption>
+                  </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+       
+        <!--content start-->
+       
+       <div id="contentPanel" class="clearfix example-animate-container"   ng-view=""></div>
+
+        
+      
+        <!--content end-->
+       <footer id="searchUI" ng-class="{true: 'adaModeContainer', false:''}[( adaMode== true)]">
+       <div> <section id="sideNav" ng-show="adaMode">
+         <nav  class="adaNav">
+              <ul>
+                <li  ng-click="handleButtonClick($event)">
+                  <img src="assets/imgs/icons/icon_nearBy_off.svg"/>
+                  <figcaption>NEARBY</figcaption></li>
+                <li id="Eat" ng-click="handleButtonClick($event)">
+                  <img src="assets/imgs/icons/icon_foodAndDrink_off.svg"/>
+                  <figcaption>FOOD & DRINK</figcaption></li>
+                <li  id="Shops" ng-click="handleButtonClick($event)">
+                  <img src="assets/imgs/icons/icon_merchandise_off.svg"/>
+                  <figcaption>MERCHANDISE</figcaption></li>  
+               <li id="Seat" ng-click="handleButtonClick($event)">
+                  <img src="assets/imgs/icons/icon_seatFinder_off.svg"/>
+                 <figcaption>SEAT FINDER</figcaption></li>
+               <li id="Restroom" ng-click="handleButtonClick($event)">
+                  <img src="assets/imgs/icons/icon_restroom_off.svg"/>
+                 <figcaption>RESTROOMS</figcaption></li>
+               
+                <li  id="MoreSer" ng-click="handleButtonClick($event)">
+                  <img src="assets/imgs/icons/icon_more_off.svg"/>
+                  <figcaption>MORE</figcaption>
+                  </li>
+                   <li >
+                  <img src="assets/imgs/icons/icon_search.svg" ng-click="handleSearch()"/>
+                  <figcaption ng-click="handleSearch()">SEARCH</figcaption>
+                  </li>
+                  <li   class="offaccessbility">
+                 <div class="accessbility" ng-click="handleAdaModeOff()"><img src="assets/imgs/icons/icon_accessibility.svg"/><div>ACCESSIBILITY</div> <div class="onada">ON</div></div>
+                  </li>
+              </ul>
+            </nav>
+        </section></div>
+          <div ng-show="!adaMode" class="searchContainer"  >
+            <div ><img src="assets/imgs/icons/icon_search.svg" ng-click="handleSearch()"/><div ng-click="handleSearch()">SEARCH</div> </div>
+            <div  align="right" >                 <div class="accessbility" ng-click="handleAdaMode()"><img src="assets/imgs/icons/icon_accessibility.svg"/><div>ACCESSIBILITY</div> <div class="onOff">OFF</div></div>
+</div>
+          </div>
+        </footer>
+      </div>
+    </section>
+    
+    <!--Control Panel UI End--> 
+    </div>
+  </div>
+  <div id="aside">
+  <div class="paidAds">
+<div id="bankLogo">
+    <img src="assets/imgs/icons/TDBankLogo_right.svg" >
+  </div></div>
+  <div class="freeAds"><div data-load="checkme.didyouknowvalue" didyouknow-module></div><!--<img src="assets/imgs/1_TD_garden_wayfinder_nearBy_v24_04.jpg" >--></div>
+  </div>
+</div>
+<div class="pop_box"> <div>this is text msg</div></div>
+<exit-element ng-show="isExitShow" ></exit-element>
+<div instant-Message class="instant" data-value="checkme.instantMessageString"></div> 
+<div  operation-module class="operationAlert" id="operationAlertModule"  ng-show='operationAlertMsgStatus'></div> 
+
+<script type="text/javascript" src="assets/js/angular.js"></script> 
+<script type="text/javascript" src="assets/scripts/vendor/libs/angular-animate.min.js"></script> 
+
+
+<script type="text/javascript" src="app.module.js"></script>
+<script type="text/javascript" src="shared/app.websocket.js"></script> 
+<script type="text/javascript" src="shared/app.idlePlay.js"></script> 
+
+ <script type="text/javascript" src="shared/app.route.js"></script> 
+ <script type="text/javascript" src="controllers/didYouKnowController.js"></script>
+  <script type="text/javascript" src="controllers/pagesController.js"></script>
+  <script type="text/javascript" src="controllers/moreController.js"></script>
+
+<script type="text/javascript" src="assets/scripts/pages/Nearby/controller.js"></script> 
+<script type="text/javascript" src="assets/scripts/pages/SeatFinder/controller.js"></script> 
+<!-- <script type="text/javascript" src="assets/scripts/pages/FoodDrink/controller.js"></script> -->
+<script type="text/javascript" src="assets/scripts/pages/Search/controller.js"></script>
+<!-- <script type="text/javascript" src="assets/scripts/pages/Merchandise/controller.js"></script>
+<script type="text/javascript" src="assets/scripts/pages/Restroom/controller.js"></script>
+<script type="text/javascript" src="assets/scripts/pages/MoreService/controller.js"></script> -->
+<script type="text/javascript" src="assets/scripts/shared/directives/vendorListing/component.js"></script>
+<script type="text/javascript" src="assets/scripts/shared/directives/IdlePlay/component.js"></script>  
+
+<script type="text/javascript" src="assets/scripts/shared/directives/instantMessage/component.js"></script>
+<script type="text/javascript" src="assets/scripts/shared/directives/seatFinder/component.js"></script>
+<script type="text/javascript" src="assets/scripts/shared/directives/seatFinder/rowcomponent.js"></script>
+<script type="text/javascript" src="assets/scripts/shared/directives/seatFinder/seatcomponent.js"></script>
+<script type="text/javascript" src="assets/scripts/shared/directives/OperationAlert/component.js"></script>
+<script type="text/javascript" src="assets/scripts/shared/directives/ExitStrategy/component.js"></script>
+<script type="text/javascript" src="assets/scripts/shared/directives/ExitStrategy/subWay/component.js"></script>
+<script type="text/javascript" src="services/content.js"></script> 
+<script type="text/javascript" src="services/config.js"></script>
+<script type="text/javascript" src="services/socket.js"></script> 
+<script type="text/javascript" src="services/unica.js"></script> 
+<script type="text/javascript" src="services/utility.js"></script> 
+<script type="text/javascript" src="services/httpService.js"></script>
+<script type="text/javascript" src="services/dykService.js"></script>
+<script type="text/javascript" src="services/pagesService.js"></script>
+<script type="text/javascript" src="services/moreService.js"></script>
+<script type="text/javascript" src="assets/js/vendor/jquery-1.11.0.min.js"></script> 
+<script type="text/javascript" src="assets/js/xml2json.min.js"></script>
+<script type="text/javascript" src="assets/js/iscroll.js"></script>
+<script src="assets/js/lib/raphael-min.js"></script>
+<script src="assets/js/lib/jquery.lazylinepainter-1.7.0.js"></script>
+<script src="assets/js/lib/jquery.panzoom.min.js"></script>
+<script src="assets/js/draw.path.js"></script>
+<script src="assets/js/main.js"></script>
+
+
+
+
+</body>
+</html>

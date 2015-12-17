@@ -1,0 +1,39 @@
+
+<div id="wrapper">
+	
+  <div id="scrollers">
+  	<div id="foodHeader" class="clearfix"><div id="foodText">Show only:</div></div>
+    <ul id="thelist">
+
+    </ul>
+    <div><div class="downArrow"><img src="assets/imgs/icons/test.svg"/></div><div id="findText">Can't find what you're looking for? Tap 'Search' below.</div></div>
+  </div>
+</div>
+    
+ <div class="menuPage">
+	<div class="menuList">
+	</div>
+	<div id="menuDetail">
+		<div id="menuHeader">
+			<div id="topPicks"> 
+				<div ng-click="closeMenu($event)"id="menuHideDetail" >
+					<div>hide</div><img src="assets/imgs/icons/icon_hideButton.svg"/></div>
+					<div>Full Menu
+					</div>
+				</div>
+			</div>
+			<div id="menuDetailContent">
+            <div id="menuWrapper">
+            <div id="scrollers">
+            <ul id="thescroll">
+				<li id="menuDetailRow" ng-repeat="item in menuArray">
+					<div id="menuName">{{item._name}} </div>
+					<div id="menuPrice">{{item._price }}</div>
+				</li>
+               </ul> 
+                </div>
+                </div>
+			</div>
+
+	</div>
+</div>

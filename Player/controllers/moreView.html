@@ -1,0 +1,86 @@
+<div align="center" class="clearfix">
+<div class="moreTitle clearfix" ng-show="moreTitle" ><div ng-show="!isChild" ng-click="goBack();"><img src="assets/imgs/icons/arrowBall.svg"/><div  >More</div></div>
+<div ng-show="isChild" ng-click="goPrevious();"><img src="assets/imgs/icons/arrowBall.svg"/><div class="head">{{infoItem}}</div></div>
+<div id="titleText">{{titleTxt}}</div></div>
+  <div id="moreServiceContainer" class="clearfix" align="center">
+    <div id="wrapper" ng-animate="{enter: 'fade-hide', leave: 'fade-show'}">
+      <div >
+        <ul id="thelist" style="list-style:none;">
+          <li class="moreServiceRow"  ng-repeat="item in items track by $index" style="border-bottom:4px dotted #c0c0c0;" > <span ng-switch="item.id" >
+            <div ng-switch-when="inti" class="rowtable" ng-click="handleClickEvent(item.vendorName,item.leafCheck,item.nodeId,item.clickCheck);">
+                <div class="service"><img src="assets/imgs/icons/{{item.img}}.svg"/></div>
+                <div class="serviceName">{{item.vendorName}}</div>
+                <div class="rightArrow"><img src="assets/imgs/icons/moreServices_rightArrow.svg"/></div>
+            </div>
+
+            <div ng-switch-when="event" class="clearfix" style="height:100%">
+              <div  class="rowtable" ng-click="handleEventModule($event);">
+                  <div  id="eventName" >{{item.vendorName}}</div>
+                  <div id="eventDate">{{item.nodeXml._EDate}}</div>
+                  <div id="eventTime">{{item.nodeXml._ETime}}</div>
+                  <div class="rightArrow"><img src="assets/imgs/icons/moreServices_downArrow.svg"/></div>
+              </div>
+              <div  class="eventDetails">
+                <div ng-click="closeDetail($event)"id="hideEvent" >
+                  <img src="assets/imgs/icons/icon_hideButton.svg"/>
+                  <div>hide</div> 
+                  
+                </div>
+                <div class=" eventSlide clearfix">
+                  <img class="eventImg" onerror="hideBrokenEventImg(this);" ng-src="../Data/Event/{{item.nodeXml._ELI}}"/>
+                  <div class="eventDescription">{{item.nodeXml._EDesc| limitTo:300}}</div>
+                  
+                </div>
+            </div>
+
+            </div>
+
+             <div ng-switch-when="infoSubChild" class="clearfix" style="height:100%">
+              <div  class="rowtable">
+                  <div class="infosubtext" ng-click="handleClickEvent(item.vendorName,item.nodeXml._isleafnode,item.nodeXml._Id,item.clickCheck);">{{item.vendorName}}</div>
+                 <div class="rightArrow"><img src="assets/imgs/icons/moreServices_rightArrow.svg"/></div>
+              </div>
+            </div>
+
+             <div ng-switch-when="infoLeafChild" class="clearfix" style="height:100%">
+              
+                  
+                  <div id="leafInfo"><div>{{item.nodeXml._ILD}}</div></div>
+                 
+                 <div> <img  class="leafImage"  onerror="hideBrokenEventImg(this);" ng-src="../Data/InfoCategory/{{item.nodeXml._MIA}}"/></div>
+                  
+            
+              
+            </div>
+
+            <div  class="rowtable" ng-click="highlight($event,item.nodeXml._SI)" ng-switch-when="Atm">
+            <div class="service"><img src="assets/imgs/icons/icon_TDBank_ATM_off.svg"/></div> 
+            <div>{{item.vendorName}}</div>
+            <div class="rightArrow"><img src="assets/imgs/icons/moreServices_rightArrow.svg"/></div>
+            </div>
+
+            <div  class="rowtable"  ng-click="highlight($event,item.nodeXml._SI)" ng-switch-when="Water Fountain">
+            <div class="service"><img src="assets/imgs/icons/icon_waterFountain_off.svg"/></div> 
+            <div>{{item.vendorName}}</div>
+            <div class="rightArrow"><img src="assets/imgs/icons/moreServices_rightArrow.svg"/></div>
+            </div>
+
+            <div  class="rowtable"  ng-click="highlight($event,item.nodeXml._SI)" ng-switch-when="Public Relations Office">
+            <div class="service"><img src="assets/imgs/icons/icon_guestRelations_off.svg"/></div> 
+            <div>{{item.vendorName}}</div>
+            <div class="rightArrow"><img src="assets/imgs/icons/moreServices_rightArrow.svg"/></div>
+            </div>
+
+
+            <div  class="rowtable" ng-click="highlight($event,item.nodeXml._SI)" ng-switch-when="First Aid Office">
+            <div class="service"><img src="assets/imgs/icons/icon_safety_off.svg"/></div>   
+            <div>{{item.vendorName}}</div>
+            <div class="rightArrow"><img src="assets/imgs/icons/moreServices_rightArrow.svg"/></div>
+            </div>
+            </span> </li>
+            <div><div class="downArrow"><img src="assets/imgs/icons/test.svg"/></div><div id="findText">Can't find what you're looking for? Tap 'Search' below.</div></div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

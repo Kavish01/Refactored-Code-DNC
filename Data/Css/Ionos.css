@@ -1,0 +1,4499 @@
+@font-face {
+font-family: 'AgencyFB-Bold';
+ src: url('Assets/style/fonts/agencyb-webfont.eot');
+        src: url('Assets/style/fonts/agencyb-webfont.eot?#iefix') format('embedded-opentype'),
+        url('Assets/style/fonts/agencyb-webfont.svg#AgencyFb') format('svg'),
+        url('Assets/style/fonts/agencyb-webfont.woff') format('woff'),
+        url('Assets/style/fonts/agencyb-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+@font-face {
+        font-family: "DIN Engschrift Std";
+        src: url('Assets/style/fonts/dinmd___-webfont.eot');
+        src: url('Assets/style/fonts/dinmd___-webfont.eot?#iefix') format('embedded-opentype'),
+        url('Assets/style/fonts/dinmd___-webfont.svg#DIN Engschrift Std') format('svg'),
+        url('Assets/style/fonts/dinmd___-webfont.woff') format('woff'),
+        url('Assets/style/fonts/dinmd___-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+@font-face {
+        font-family: "AgencyFb";
+        src: url('Assets/style/fonts/agencyb-webfont.eot');
+        src: url('Assets/style/fonts/agencyb-webfont.eot?#iefix') format('embedded-opentype'),
+        url('Assets/style/fonts/agencyb-webfont.svg#AgencyFb') format('svg'),
+        url('Assets/style/fonts/agencyb-webfont.woff') format('woff'),
+        url('Assets/style/fonts/agencyb-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+html, body {
+	
+  width: 100%;
+  height:100%;
+}
+.Table{
+	
+}
+#extPage{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:1001;
+}
+#extPage .extHeader{
+	height:21%;
+	background-color:#000000;
+	display:table;
+	width:100%;
+}
+.emptyIcon{
+	color:#e4e4e4;
+	text-align:center;
+	margin-top:500px;
+	
+}
+.emptyText{
+	font-family: "DIN Engschrift Std";
+	text-align: center;
+	margin-top:50px;
+	font-size:50px;
+	color: #6C6C6C;
+	
+}
+
+.extHeaderCell{
+	display:table-cell;
+	width:50%;
+	vertical-align:top;
+}
+.loadTmp{
+	height:100%;
+}
+.alertTemplate{
+	width:100%;
+	height:100%;
+	background-color:#bc2e1a;
+	
+}
+.alertTemplate section{
+	display:table;
+	padding-left:3%;
+	height:100%;
+}
+.alertTemplate section img{
+	
+	vertical-align:middle;
+}
+.alertTemplate section >div{
+	display:table-cell;
+	vertical-align:middle;
+}
+.alertTemplate section >div div{
+font-family: "DIN Engschrift Std";
+	font-size:70px;
+	display:inline-block;
+	vertical-align:middle;
+	color:#fff;
+	margin-left:50px;
+	max-width:1500px;
+	 height:190px; overflow:hidden;
+}
+.defaultMsg{
+	background-image:url(../../Player/assets/imgs/defaultMsg.jpg);
+	background-repeat:no-repeat;
+
+	
+}
+
+.promotionTemplate{
+	width:100%;
+	height:100%;
+	background-color:#000000;
+}
+.promotionTemplate img{
+	width:100%;
+	max-height:460px;
+}
+.rightContainer{
+	position:relative;
+	width:100%;
+	height:100%;
+	    background-position-y: 180px;
+    background-repeat: no-repeat;
+	background-image: url('../../Player/assets/imgs/vendorListingBg.gif');
+}
+.righttopContainer{
+	position:absolute;
+	left:0;
+	top:15%;
+	right:20%;
+	margin:auto;
+	width:0;
+	display:table;
+	color:#FFFFFF;
+	font-size:23px;
+	text-align: center;
+	
+}
+.righttopContainer div{
+	display:table-cell;
+	vertical-align:middle;
+	font-family: "AgencyFb";
+    color: #fff;
+    padding-left: 30px;
+    font-size: 60px;
+}
+.rightContainer .arrowIcon{
+	position:absolute;
+	right:240px;
+	bottom:20px;
+}
+.rightContainer  .stairIcon{
+	position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+.rightContainer .nrTxt{
+	font-family: "AgencyFb";
+	color:#fff;
+	position:absolute;
+	right:440px;
+	bottom:32px;
+	font-size:120px;
+}
+.subTable{
+display: table;
+width:100%;
+
+}
+.subModule{
+	font-family: "DIN Engschrift Std";
+	margin-top:40px;
+	margin-bottom:40px;
+}
+.subModule:nth-child(3){
+	margin-top:0px;
+}
+.universalVideo {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: black;
+    z-index:1000;
+}
+.subway{
+	float:left;
+	width:49%;
+	padding-top:30px;
+	padding-left:30px;
+	
+}
+.subway header{
+	font-size:60px;
+	font-weight:bold;
+	background-image:url(../../Player/assets/imgs/ticon.jpeg);
+	background-repeat: no-repeat;
+    background-position: left top;
+    padding: 40px;
+    text-indent: 130px;
+	
+}
+.subwayOverlay{
+	max-height:864px;
+	overflow:hidden;
+}
+.railway {
+	float:left;
+	width:49%;
+	padding-top:30px;
+	padding-left:30px;
+}
+
+.railway header{
+	font-size:60px;
+	font-weight:bold;
+	background-image:url(../../Player/assets/imgs/ticon.jpeg);
+	background-repeat: no-repeat;
+    background-position: 40px top;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 75px;
+    text-indent: 130px;
+	
+}
+.lastcell{
+	width:100%;
+}
+.Rowt
+    {
+        display: table-row;
+         padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+    }
+    .Cell
+    {
+		font-family: "DIN Engschrift Std";
+        display: table-cell;
+		
+        border-bottom: 4px solid #93269d;
+        font-size: 60px;
+        font-weight: bold;
+        padding-bottom: 30px;
+        padding-left: 50px;
+        padding-right: 120px;
+        padding-top: 30px;
+		color: #8B008B;		text-align: left;
+		width:30%;
+    }
+	.lowCell{
+		width:10% !important;
+	}
+    .Cell1
+    {
+		font-family: "DIN Engschrift Std";
+        display: table-cell;
+        
+        font-size: 60px;
+        
+        padding-left: 50px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        padding-right: 30px;
+		color: #6c6c6c;		text-align: left;
+    }
+     .Cell:nth-child(3)
+    {
+         padding-left: 45px;
+       
+    }
+
+.first{
+background-color: #ffffff;
+}
+.second{
+background-color: #e4e4e4;
+}
+
+#universalVideoElement
+{
+    position: relative;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.rightVendorData
+{
+  text-align: right;
+}
+
+.eventImg
+{
+ 
+height: 250px;
+width: 40%;
+float: right;
+margin-right: 30px;
+}
+.eventDescription
+{
+  width: 50%;
+  margin-left: 40px;
+}
+
+.instant
+{
+top: 198px;
+/* left: 15px; */
+position: absolute;
+
+background-color: #b8392a;
+width: 1024px;
+min-height: 65px;
+height: auto;
+overflow: hidden;
+opacity:0;
+color: white;
+font-size: 25px;
+display:none;
+ font-family: "DIN Engschrift Std";
+
+}
+#instantImage
+{
+  height: 45px;
+  margin-top:2%;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#instantMessage
+{
+  margin-top: 15px;
+}
+
+
+.operationAlert
+{
+
+
+}
+
+.operationAlert img
+{
+width: 100px;
+
+}
+#OperationAlertMessage
+{
+font-size: 25px;
+
+}
+ 
+ #OperationAlertTitle
+ {
+  font-size: 30px;
+  
+ }
+
+
+#container {
+  width: 100%;
+  height: 700px;
+  background-image:url(Assets/style/imgs/vendorListingBg.gif);
+  background-size: 100% 134px;
+  background-repeat:no-repeat;
+  display:table;
+  border-spacing: 0px;
+}
+#location
+{
+ height: 54px;
+ padding-top:10px;
+width: 100%;
+background-color: black;
+
+}
+#location1
+{
+height: auto;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    padding: 80px;
+    left: 0;
+    z-index: 1001;
+
+}
+#leftLocation
+{
+ float:left;
+}
+#middleLocation
+{
+	font-family: "AgencyFb";
+	width: 100%;
+float:none;
+font-size: 21px;
+color: #ffffff;
+
+}
+#middleLocation img{
+	width:140px;
+	height:auto;
+	vertical-align:middle;
+}
+#middleLocation div{
+	display:inline-block;
+	height:100%;
+	width: auto;
+	vertical-align:middle;
+}
+
+#timeContainer
+{
+ width:100%;
+}
+#rightLocation
+{
+  float:right;
+}
+
+#rightTable,#leftTable
+{
+ 
+}
+#rightTable img,#leftTable img
+{
+ vertical-align:middle;
+height:31px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#rightLocationText, #leftLocationText 
+{
+	font-family: "AgencyFb";
+  display: inline-block;
+  vertical-align:middle;
+  font-size:35px;
+  color: #ffffff;
+}
+
+
+#content-container {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+ vertical-align:top;
+ overflow:hidden;
+}
+
+#content-container .contentContainer{
+	position:relative;
+	
+}
+#header {
+ 
+  width: 100%;
+  height: 134px;
+ 
+}
+#mapContent {
+  width: 1024px;
+ height:566px;
+}
+
+
+#aside {
+ 
+  height:auto;
+  display: table-cell;
+ vertical-align:top;
+
+}
+#aside .paidAds {
+	width:341px;
+	height:134px; 
+}
+#aside .paidAds img{
+	width:100%;
+	height:auto; 
+ 
+}
+.Row{
+  display: table;
+  
+  padding-left:40px;
+  padding-right: 40px;
+  width: 100%;
+  height:100%;
+  color: #ffffff;
+  position: absolute;
+  top:0;
+}
+
+.Row img
+{
+  height:100px;
+}
+
+#VendorContainer
+{
+color: white;
+position:relative;
+}
+.leftvendorLogo img, .rightvendorLogo img
+{
+	width:75px;
+  height:auto;
+}
+#vendorName
+{
+	font-family: "AgencyFb";
+font-size: 40px;
+font-weight:bold;
+}
+#vendorData
+{
+  display: table-cell;
+  vertical-align:middle;
+  padding-right: 30px;
+
+  height:134px;
+}
+
+#vendorDescription,#vendorTitle
+{
+	font-family: "AgencyFb";
+  font-size: 28px;
+  color:#b0b0b0;
+}
+#vendorTitle
+{
+  color:#ffffff;
+}
+#leftVendorDirection, #leftVendorImage, .rightvendorLogo ,.leftvendorLogo, #rightVendorDirection, #rightVendorImage{
+  display: table-cell;
+  width: 60px;
+  padding-right: 40px;
+   vertical-align: middle;
+}
+#leftVendorImage img, #rightVendorImage img
+{
+	width:75px;
+	height:auto;
+	}
+	
+	#leftVendorDirection img, #rightVendorDirection img
+{
+	width:45px;
+	height:auto;
+	}
+
+/*nearby module*/
+.nearbyRow{
+	  font-family: "DIN Engschrift Std";
+  display: table;
+  width: 100%;
+  height:100%;
+  color: #323232;
+  padding-top: 10px;
+padding-bottom: 10px;
+  
+}
+.nearbyRow >div{
+	display:table-cell;
+	height:100%;
+	vertical-align:middle;
+}
+
+#nearbyLeftVendorDirection img
+{
+	margin-right:5px;
+ margin-left:5px;
+  
+}
+#nearbyVendorName,#nearbyVendorDescription,#neabyLeftVendorImage,#neabyRightVendorImage
+{
+  height:auto;
+  text-align:left;
+
+}
+#neabyLeftVendorImage,#neabyRightVendorImage{
+	text-align:center;
+	width:46px;
+	
+	
+}
+#nearbyLeftVendorDirection,#nearbyRightVendorDirection{
+	width:30px;
+}
+#nearbyVendorName
+{
+	 font-family: "DIN Engschrift Std";
+  font-size: 20px;
+  color:#333333;
+width:190px;
+margin-top: 16px;
+}
+#nearbyVendorDescription
+{
+  font-size: 15px;
+  width:30%;
+  margin-top: 16px;
+}
+
+#neabyLeftVendorImage
+{
+  margin-right:15px;
+}
+#neabyLeftVendorImage img,#neabyRightVendorImage img
+{
+width: 35px;
+height: auto;
+}
+#nearbyRightVendorDirection img,#nearbyLeftVendorDirection img
+{
+width: 18px;
+height: auto;
+}
+.idlePlayModule {
+  position: absolute;
+ width: 1024px;
+height: 566px;
+  top: 200px;
+  z-index: 100;
+}
+
+#idleComp {
+  background-color: #000000;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#idleComp video, #idleComp img, #idleComp iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#searchWrapper{
+	position:absolute;
+	left:0px;
+	bottom:10px;
+	display:none;
+}
+.clearItem{
+	clear:left;
+
+}
+
+#foodType
+{
+  position: relative;
+
+margin-bottom: 5px;
+}
+
+
+
+#foodText
+{
+  display: inline-block;
+vertical-align: middle;
+height: 100%;
+margin-right: 20px;
+}
+
+.adaPanelHeight {
+height: 415px !important;
+}
+
+
+
+
+.rowtable img{
+  width:35px;
+}
+.rowtable .service
+{
+  width: 100px!important;
+}
+.rightArrow
+{
+  float: right;
+  padding-right: 30px;
+}
+
+.downArrow
+{
+  float: left;
+  width: 50px;
+}
+#findText
+{
+font-size: 30px;
+margin-left: 35px;
+color: #999999;
+font-family: "DIN Engschrift Std";
+margin-top: 25px;
+}
+
+.serviceName
+{
+  font-family: "DIN Engschrift Std";
+font-size: 20px;
+color: #333333;
+
+}
+.rowtable 
+{
+   font-family: "DIN Engschrift Std";
+font-size: 20px;
+color: #333333;
+}
+
+
+.moreTitle {
+    font-family: "DIN Engschrift Std";
+font-size: 15px;
+color: #333333;
+width: auto!important;
+margin-left: 20px;
+margin-right: 20px;
+border-top: 4px solid #c0c0c0;
+margin-bottom: 0px!important;
+}
+.moreTitle #titleText
+{
+  font-size: 20px;
+}
+.moreTitle img{
+  float:left;
+  margin-right: 10px;
+}
+
+#eventName
+{
+  width:250px!important;
+}
+#eventDate
+{
+  width:100px!important;
+  font-size: 12px;
+}
+#eventTime
+{
+  font-size: 12px;
+}
+#leafInfo
+{
+  line-height: 50px;
+font-size: 30px;
+width: 95%;
+margin-left: 2.5%;
+}
+
+.logohide
+{
+  display: none;
+}
+#seatFinderWrapper{
+		position:relative; 
+		z-index:1;
+	
+padding-left:30px;
+padding-right:30px;
+	height:100%;
+	overflow:auto;
+	text-align:center;
+}
+.topMsgtxt{
+	font-family: "DIN Engschrift Std";
+	font-size:15px;
+	margin-bottom:12px;
+	color:#333333;
+	border-bottom:2px dotted #d6d6d6;
+	padding:5px;
+	margin-left:20px;
+	margin-right:20px;
+}
+.seatfinderNav ul{
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	display: inline-block;
+}
+.seatfinderNav li{
+	font-family: "DIN Engschrift Std";
+	width:200px;
+	font-size:15px;
+	padding:5px;
+	margin-bottom:15px;
+	border:2px solid #50a1ec;
+	color:#282828;
+list-style:none;
+border-radius:5px;
+font-weight:bolder;
+ -moz-user-select: none; 
+        -khtml-user-select: none; 
+        -webkit-user-select: none; 
+        -o-user-select: none; 
+		cursor:pointer;
+}
+.seatFinderActive{
+	background-color:#268ae7;
+	color:#FFF !important;
+}
+
+#seatFinderTable{
+	display:table;
+	width:100%;
+	
+}
+#seatFinderSecondTable{
+	width:100%;
+	position:relative;
+	
+	display:table;
+}
+#seatFinderSecondTable .col{
+	    width: auto;
+    display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+	
+}
+#seatFinderTable .seatFinderColumn{
+	width:50%;
+	text-align:left;
+	position:relative;
+}
+#seatFinderTable .seatFinderColumn:first-child{
+	display:table-cell;
+	    vertical-align: top;
+    text-align: center;
+  
+}
+#categorySeatFinderWrapper{
+	height:976px;
+	overflow:hidden;
+}
+#arrowContainer{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:50px;
+	background:#fff;
+	opacity:.8;
+	z-index:100;
+	background-image:url(../../Player/assets/imgs/arrow_carrot-down.png);
+	background-position:center bottom;
+	background-repeat:no-repeat;
+	box-shadow: 0px -10px 10px #fff;
+}
+.pop_box {
+	font-family: "DIN Engschrift Std";
+	position: absolute;
+	background: #ffffff;
+	border: 6px solid rgb(241, 90, 37);
+	color:#000;
+	border-radius:10px;
+	text-align:center;
+	width:auto;
+	height:auto;
+	max-width:500px;
+	font-size:30px;
+	display:none;
+	
+	
+}
+.pop_box:after, .pop_box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	
+	position: absolute;
+	pointer-events: none;
+}
+
+.pop_box:after {
+	border-color: rgba(213, 132, 70, 0);
+	border-top-color: #fff;
+	border-width: 20px;
+	margin-left:-30px;
+	
+	
+}
+.pop_box:before {
+	border-color: rgba(245, 243, 243, 0);
+	border-top-color: #ff5400;
+	border-width: 20px;
+	margin-left:-30px;
+	margin-top:6px;
+	
+}
+.pop_box div{
+	padding:20px;
+}
+.adsDivLegends{
+	font-family: "DIN Engschrift Std";
+	font-size:30px;
+	display:none;
+    background-image: url(../../Player/assets/imgs/locIcon.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    padding-left: 50px;
+    margin-top: 50px;
+    margin-left: -52px;
+}
+.adsDivProshop{
+	font-family: "DIN Engschrift Std";
+	font-size:30px;
+	display:none;
+    background-image: url(../../Player/assets/imgs/locIcon.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    padding-left: 50px;
+    margin-top: 50px;
+    margin-left: -52px;
+}
+.vdDesc{
+	display:none;
+}
+#numberList{
+	display:none;
+}
+#secondList{
+	display:none;
+	position:relative;
+}
+#thirdList{
+display:none;
+position:relative;
+}
+
+
+#seatFinderTable #scroller li {
+	background-color:#ffffff;
+}
+.listNumberContainer{
+	width: 222px;
+height: 841px;
+position: relative;
+overflow: hidden;
+background-image:url(Assets/style/imgs/seatFinderBack.png);
+background-repeat:no-repeat;
+background-size:100% 100%;
+}
+.listNumberContainer .Seatband{
+	font-family: "DIN Engschrift Std";
+	position:absolute;
+	height:25px;
+	background-color:#268be7;
+	width:81%;
+	color:#FFF;
+	padding:10px;
+	left:0;
+	right:0;
+	bottom:0;
+	font-size:15px;
+	margin:auto;
+	text-align:left;
+	top:0;
+}
+#SeatListWrapper {
+	position:absolute; z-index:1;
+	top:110px; bottom:110px; ;
+	width:100%;
+	overflow:visible !important;
+}
+#SeatListWrapper1,#SeatListWrapper2 {
+	position:absolute; z-index:1;
+	top:110px; bottom:380px; ;
+	width:100%;
+	overflow:visible !important;
+}
+
+.seatFinderScroller {
+	position:absolute; z-index:1;
+/*	-webkit-touch-callout:none;*/
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	width:100%;
+	padding:0;
+}
+
+.seatFinderScroller ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	width:100%;
+	text-align:left;
+}
+
+.seatFinderScroller li {
+	padding:10px;
+	font-weight:bold;
+	text-align:	center;
+	line-height:20px;
+	color:#282828;
+	font-size:15px;
+}
+
+.seatFinderRowSelected{
+	color:#fff !important;
+	font-size:21px !important;
+}
+.non-selected{
+	font-size:15px ;
+}
+.seatFinderFooter{
+	
+	border-top:1px solid #999;
+	position:absolute;
+	width:100%;
+	
+	height:auto;
+	bottom:205px;
+	
+}
+ .navbuttonContainer{
+	display:table;
+	width:100%;
+	padding-top:10px;
+}
+ .navbuttonContainer .col{
+display:table-cell;
+width:50%;
+vertical-align:top;
+}
+ .navbuttonContainer .col >div{
+	display:none;
+}
+
+ .insideButton{
+	font-family: "DIN Engschrift Std";
+ background-color:#000;
+ color:#FFF;
+ font-weight:bold;
+ display:inline-block;
+ border-radius:5px;
+ padding-left:5px;
+ padding-right:5px;
+ padding-top:5px;
+ padding-bottom:5px;
+ min-width:112px;
+ -moz-box-shadow:    0px 0px 0px 4px #000;
+  -webkit-box-shadow: 0px 0px 0px 4px #000;
+  box-shadow:         0px 0px 0px 4px #000;
+        border: 1px solid white;
+		cursor:pointer;
+		
+		   
+  
+        
+}
+.numberButton{
+	position:relative;
+	
+	height:100%;
+	text-align:right;
+	    padding-right: 30px;
+    padding-top: 20px;
+}
+.helpSection{
+	font-family: "DIN Engschrift Std";
+	position:absolute;
+	top:0;
+	padding-top:20px;
+	color:#282828;
+	width:100%;
+}
+.helpContainer .title img{
+	vertical-align:middle;
+	margin-right:5px;
+	width:auto;
+	
+}
+.helpContainer .title div{
+	display:inline-block;
+	vertical-align:middle;
+}
+.helpContainerAda .mapImg{
+	width:291px !important;
+}
+.helpContainerAda .description{
+	width:820px;
+	margin:10px;
+}
+/* here code for moreService come */
+
+#moreServiceContainer{
+	
+	width:auto;
+	height:250px;
+	margin-left: 20px;
+margin-right: 20px;
+position: relative;
+height: 1200px;
+}
+#menuWrapper{
+	position:absolute; z-index:1;
+	top:0px; bottom:0px; left:0;
+	right:0;margin:auto;margin-right:20px;margin-left:20px;
+	width:auto; 
+	
+	overflow:auto;
+	
+
+}
+#menuDetailContent{
+	position:relative;
+	width:100%;
+	height:540px;
+}
+
+.fade-hide, .fade-show {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.fade-hide {
+  opacity:1;
+}
+.fade-hide.fade-hide-active {
+  opacity:0;
+}
+
+.fade-show {
+  opacity:0;
+}
+.fade-show.fade-show-active {
+  opacity:1;
+}
+.rowtable{
+	display:table;
+	table-layout:auto;
+	width:100%;
+	height:100%;
+	
+}
+.rowtable >div{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.rowtable >div:first-child{
+	width:auto;
+}
+
+.eventDetails{
+display:none;
+}
+.moreTitle >div:first-child, .moreTitle >div:nth-child(2) {
+	left: 0px;
+position: relative;
+top: 0px;
+float: left;
+margin-right: -150px;
+}
+.moreTitle div{
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.adaModeContainer{
+background-color:#e4e4e4 !important;
+}
+.adaNav ul{
+display: table;
+table-layout: fixed;
+padding:10px;
+}
+.adaNav li{
+font-family: "AgencyFb";
+display: table-cell;
+font-size: 12px;
+font-weight: 500;
+text-align: center;
+padding-top:10px;
+color:#282828;
+}
+.adaNav li img{
+width:20px;
+height:auto;
+}
+
+.accessbility{
+	font-family: "AgencyFb";
+	background-color:#FFF;
+	padding:3px;
+	color:#282828;
+	border-radius: 15px;
+color: #282828;
+display: table;
+margin-right:20px;
+width: auto;
+text-align:left;
+}
+.accessbility img{
+vertical-align:middle;
+}
+.accessbility div{
+	display:inline-block;
+	vertical-align:middle;
+}
+.offaccessbility{
+	width:136px;
+}
+.onOff{
+	background-color:#a7a7a7;
+	border-radius:50%;
+	padding:3px;
+	padding-left:5px;
+	padding-right:5px;
+	margin-left:10px;
+	color:#FFF;
+}
+.onada{
+	background-color:#ff0000;
+	border-radius:50%;
+	padding:3px;
+	padding-left:5px;
+	padding-right:5px;
+	margin-left:10px;
+	color:#FFF;
+}
+#controlPanelUI{
+	width:475px;
+	/*height:48vh;*/
+	
+	position:absolute;
+	bottom:0;
+	left:35px;
+	overflow:hidden;
+	background-color:#FFF;
+	box-shadow: 0px 0px 20px #888888;
+	border-top: 1px solid #000;
+	z-index:10;
+	
+}
+.controlPanelContainer{
+	position:relative;
+	width:100%;
+	height:100%;
+	background-color:#FFF;
+
+}
+#searchUI{
+	font-family: "DIN Engschrift Std";
+width: 100%;
+
+height: 50px;
+bottom: 0;
+position: absolute;
+font-size: 20px;
+color: #ffffff;
+z-index: 10;
+background-color: #000000;
+	
+}
+.searchContainer img{
+width:25px;
+height:auto;
+vertical-align:middle;
+
+margin-right:10px;
+	}
+.searchContainer{
+	position:relative;
+	display:table;
+	width:100%;
+	height:100%;
+	
+
+	/*background-color:#d9d6d1;*/
+}
+
+
+.searchContainer > div{
+	font-family: "AgencyFb";
+	display:table-cell;
+	width:50%;
+	vertical-align:middle;
+	padding-left: 20px;
+font-size:16px;
+}
+.searchContainer >div >div{
+	display:inline-block;
+	vertical-align:middle;
+}
+#navigationContainer{
+
+
+margin-left:20px;
+margin-right:20px;
+margin-top:17px;
+padding-bottom: 20px;
+padding-top: 0px;
+
+
+}
+#sideNav{
+	
+}
+#navigationContainer ul,#sideNav ul{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+	display:table;
+	table-layout: fixed; /* optional, for equal spacing */
+}
+.topNav li{
+	font-family: "DIN Engschrift Std";
+	
+text-align:center;
+}
+.topNav li img{
+	margin-bottom:10px;
+}
+#navigationContainer li{
+	font-family: "AgencyFb";
+
+display: table-cell;
+font-size: 15px;
+	font-weight:500;
+	text-align: center;
+}
+#navigationContainer li div{
+	display:inline-block;
+}
+
+#navigationContainer li img{
+	width:50px;
+	height:auto;
+}
+#sideNav li img{
+	width:25px;
+	height:auto;
+}
+
+
+
+#wrapper {
+	position:absolute; z-index:1;
+	top:0; bottom:0; left:0;
+	right:0;margin:auto;margin-right:20px;margin-left:20px;
+	width:auto;
+	border-top: 3px solid #c0c0c0;
+	overflow:auto;
+	
+}
+
+#scrollers {
+	position:absolute; z-index:1;
+/*	-webkit-touch-callout:none;*/
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	width:100%;
+	padding:0;
+}
+
+#scrollers ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	width:100%;
+	text-align:left;
+}
+
+#scrollers li {
+	font-family: "DIN Engschrift Std";
+	color:#333333;
+	border-bottom:2px dotted #c0c0c0;
+	font-size:14px;
+}
+
+#contentPanel{
+	position:relative;
+	height:100%;
+	min-height: 250px;
+	
+}
+.eventDetails{
+	height:auto;
+	font-family: "DIN Engschrift Std";
+	color:#333333;
+	font-size:16px;
+}
+#vendorDetailContent
+{
+  float: left;
+  width:65%;
+  font-size: 15px;
+  font-family: "DIN Engschrift Std";
+}
+	#vendorDetailImage
+  {
+    text-align: right;
+  }
+  #menuName
+  {
+    float: left;
+    width: 50%;
+  }
+  .vendorDetail
+  {
+  margin-left: 93px;
+display: none;
+min-height: 250px;
+position: relative;
+}
+.vendorDetail .button
+{
+ position: absolute;
+bottom: 20px;
+left:0;
+font-size: 12px;
+
+color: white;
+}
+
+#dietaryItem
+{
+ 
+font-family: "AgencyFb";
+  background: #ffcb5b;
+border-radius: 20px;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+display:inline-block;
+padding:4px;
+font-size: 12px;
+margin-right:10px;
+font-weight:normal;
+margin-top: 10px;
+}
+#dietarySearch
+{
+font-family: "AgencyFb";
+background: #ffcb5b;
+border-radius: 20px;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+display: inline-block;
+padding: 4px;
+font-size: 12px;
+margin-right: 10px;
+font-weight: normal;
+
+
+
+}
+.dietarySearchWrap{
+	display:table;
+	
+}
+.dietarySearchWrap img{
+	vertical-align:middle;
+}
+.dietarySearchWrap div{
+	display:inline;
+	vertical-align:middle;
+}
+#dietarySearch img
+{
+height:12px;
+}
+  #vendorDetailRow
+  {
+    height:30px;
+    margin-top: 5px;
+    margin-bottom:5px;
+  }
+#hideDetail
+{
+  font-size: 15px;
+ 
+  float: right;
+  
+margin-right: 14px;
+	font-weight:bold;
+}
+#vendorDetailImage img
+{
+height: 100px;
+}
+#detailHeader
+{
+	font-size: 15px;
+width: 100%;
+/* clear: left; */
+margin-bottom: 15px;
+height: 30px;
+border-bottom: 1px solid #666;
+}
+#detailHeader img
+{
+	height: 20px;
+}
+.menuPage
+{
+  position: absolute;
+  height: 100%;
+ font-family: "DIN Engschrift Std";
+ color:#333333;
+  display: none;
+z-index: 1;
+top: 0px;
+bottom: 0px;
+left: 5%;
+width: 90%%;
+}
+.menuList
+{
+  border-bottom:1px dotted #666;
+}
+
+
+#menuDetail
+  {
+    height: auto;
+    width: 85%;
+    left: 15%;
+    margin-top: 30px;
+    position: relative; 
+  }
+
+
+
+  #menuDetailRow
+  {
+    height:15px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    font-size: 15px;
+  }
+
+#menuHideDetail
+{
+  font-size: 15px;
+ 
+  float: right;
+  
+  float:right;
+  font-weight:bold;
+}
+
+#menuHeader
+{
+  font-size: 20px;
+width: 100%;
+/* clear: left; */
+margin-bottom: 15px;
+height: 50px;
+border-bottom: 3px solid #666;
+}
+#menuHeader img
+{
+  height: 20px;
+}
+#foodHeader {
+font-size: 15px;
+height: 30px;
+border-bottom: 1px solid #666;
+margin-top: 10px;
+color: #323232;
+font-family: "DIN Engschrift Std";
+}
+.searchRow{
+  display: block;
+  width: 100%;
+  color: #323232;
+  font-family: "DIN Engschrift Std";
+ 
+}
+.searchRow >div{
+	float:left;
+	height:100%;
+}
+#searchLeftVendorDirection img
+{
+	margin-right:5px;
+ margin-top:16px;
+  
+}
+#searchItemList {
+position: absolute;
+z-index: 1;
+top:60px;
+bottom: auto;
+left: 0;
+right: 0;
+margin: auto;
+margin-left:50px;
+margin-right:50px;
+width: auto;
+opacity: 0;
+border-top: 2px solid #000000;
+overflow: hidden;
+bottom: auto;
+height: 1100px;
+}
+.noResult
+{
+  font-size: 20px;
+position: absolute;
+top: 30%;
+display: none;
+}
+
+#searchScrollers {
+  position:absolute; z-index:1;
+/*  -webkit-touch-callout:none;*/
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  width:100%;
+  padding:0;
+}
+
+#searchScrollers ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+  width:100%;
+  text-align:left;
+}
+
+#searchScrollers li {
+  padding:10px;
+  
+  line-height:20px;
+  border-bottom:1px dotted #ccc;
+
+ 
+  font-size:14px;
+}
+
+#searchVendorName,#searchVendorDescription,#searchLeftVendorImage,#searchRightVendorImage
+{
+  height:100%;
+}
+#searchVendorName
+{
+	
+  font-size: 20px;
+width:50%;
+}
+#searchVendorDescription
+{
+  font-size: 15px;
+  width:30%;
+}
+#searchRightVendorDirection img
+{
+ margin-right:15px;
+  margin-left:5px;
+ margin-top:16px;
+}
+#searchLeftVendorImage
+{
+  margin-right:15px;
+}
+#searchLeftVendorImage img,#searchRightVendorImage img
+{
+width: 35px;
+height: auto;
+}
+#searchRightVendorDirection img,#searchLeftVendorDirection img
+{
+width: 18px;
+height: auto;
+}
+#searchWrapper {
+position: relative;
+/* left: 0px; */
+height: 100%;
+width: 100%;
+/* bottom: 10px; */
+display: block;
+}
+#containerSearch
+{
+width: 100%;
+background-color: white;
+font-size: 14px;
+
+position: absolute;
+z-index: 10;
+opacity: 1;
+}
+.adaModeSearchContainer
+{
+  bottom: 0px!important;
+}
+.restroomRow{
+font-family: "DIN Engschrift Std";
+display: table;
+width: 100%;
+height: 100%;
+color: #323232;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.restroomRow >div{
+	display: table-cell;
+height: 100%;
+vertical-align: middle;
+}
+
+#restroomLeftVendorDirection, #restroomRightVendorDirection {
+width: 30px;
+}
+#restroomLeftVendorDirection img
+{
+	width: 18px;
+height: auto;
+  
+}
+
+
+#restroomLeftVendorDirection img {
+margin-right: 5px;
+margin-left: 5px;
+}
+
+#restroomWrapper
+{
+position: absolute;
+z-index: 1;
+top: 0px;
+bottom: 0px;
+left: 5%;
+width: 90%%;
+overflow: auto;
+border-top: 1px solid #666;
+
+}
+
+
+
+
+
+#restroomScrollers {
+  position:absolute; z-index:1;
+/*  -webkit-touch-callout:none;*/
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  width:100%;
+  padding:0;
+}
+
+#restroomScrollers ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+  width:100%;
+  text-align:left;
+}
+
+
+#restroomScrollers li {
+  font-family: "DIN Engschrift Std";
+color: #333333;
+line-height: 20px;
+border-bottom: 4px dotted #dedede;
+font-size: 14px;
+}
+
+#restroomVendorName,#restroomVendorDescription,#restroomLeftVendorImage,#restroomRightVendorImage
+{
+  height:auto;
+  text-align: left;
+}
+#restroomVendorName
+{
+font-family: "DIN Engschrift Std";
+font-size: 20px;
+color: #333333;
+width: 190px;
+margin-top: 16px;
+}
+#restroomVendorDescription
+{
+  font-size: 15px;
+width: 30%;
+margin-top: 16px;
+}
+#restroomRightVendorDirection img
+{
+ margin-right:15px;
+  margin-left:5px;
+ margin-top:10px;
+}
+#restroomLeftVendorImage
+{
+  margin-right: 15px;
+}
+#restroomLeftVendorImage img,#restroomRightVendorImage img 
+{
+width: 35px;
+height: auto;
+}
+#restroomLeftVendorImage,#restroomRightVendorImage 
+{
+text-align: center;
+width: 46px;
+}
+#restroomRightVendorDirection img,#restroomLeftVendorDirection img
+{
+width: 18px;
+height: auto;
+}
+#restroomType
+{
+  position: relative;
+}
+.merchandiseRow{
+font-family: "DIN Engschrift Std";
+display: table;
+width: 100%;
+height: 100%;
+color: #323232;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.merchandiseRow >div{
+  display: table-cell;
+height: 100%;
+vertical-align: middle;
+}
+
+#merchandiseLeftVendorDirection, #merchandiseRightVendorDirection {
+width: 30px;
+}
+#merchandiseLeftVendorDirection img
+{
+  width: 18px;
+height: auto;
+  
+}
+
+
+#merchandiseLeftVendorDirection img {
+margin-right: 5px;
+margin-left: 5px;
+}
+
+#merchandiseWrapper
+{
+position: absolute;
+z-index: 1;
+top: 0px;
+bottom: 0px;
+left: 0;
+right: 0;
+margin: auto;
+margin-right: 20px;
+margin-left: 20px;
+width: auto;
+border-top: 3px solid #c0c0c0;
+overflow: auto;
+}
+
+
+
+
+
+
+#merchandiseScrollers {
+  position:absolute; z-index:1;
+/*  -webkit-touch-callout:none;*/
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  width:100%;
+  padding:0;
+}
+
+#merchandiseScrollers ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+  width:100%;
+  text-align:left;
+}
+
+
+#merchandiseScrollers li {
+  font-family: "DIN Engschrift Std";
+color: #333333;
+line-height: 50px;
+border-bottom: 4px dotted #dedede;
+font-size: 14px;
+}
+
+#merchandiseVendorName,#merchandiseVendorDescription,#merchandiseLeftVendorImage,#merchandiseRightVendorImage
+{
+  height:auto;
+  text-align: left;
+}
+#merchandiseVendorName
+{
+font-family: "DIN Engschrift Std";
+font-size: 20px;
+color: #333333;
+width: 190px;
+margin-top: 16px;
+}
+#merchandiseVendorDescription
+{
+  font-size: 15px;
+width: 30%;
+margin-top: 16px;
+}
+#merchandiseRightVendorDirection img
+{
+ margin-right:15px;
+  margin-left:5px;
+ margin-top:10px;
+}
+#merchandiseLeftVendorImage
+{
+  margin-right: 15px;
+}
+#merchandiseLeftVendorImage ,#merchandiseRightVendorImage 
+{
+text-align: center;
+width: 46px;
+}
+#merchandiseLeftVendorImage img,#merchandiseRightVendorImage img
+{
+height: auto;
+width: 35px;
+}
+#merchandiseRightVendorDirection img,#merchandiseLeftVendorDirection img
+{
+width: 18px;
+height: auto;
+}
+#merchandiseType
+{
+  position: relative;
+}
+.operationAlert
+{
+position: absolute!important;
+
+background-color: #b8392a;
+
+overflow: hidden;
+
+color: white;
+font-size: 25px;
+font-family: "DIN Engschrift Std";
+z-index:10004;
+top: 0;
+width: 100%;
+
+height: 100%;
+
+}
+
+.operationAlert img
+{
+width: 450px;
+
+}
+#OperationAlertMessage
+{
+	font-family: "DIN Engschrift Std";
+	margin-top: 50px;
+font-size: 130px;
+text-align:center;
+
+}
+ 
+ #OperationAlertTitle
+ {
+ 	font-family: "DIN Engschrift Std";
+ 	margin-top: 60px;
+  font-size: 170px;
+  text-align:center;
+ 
+ }
+.operationAlertContainer{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+.operationAlertContainer .opwrapper{
+	    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    width: 2000px;
+    text-align: center;
+    margin-top: 700px;
+    margin-left: 1000px;
+
+    display: inline-block;
+}
+.didYouKnowModule{
+	position:relative;
+}
+.colContent{
+	position:absolute;
+	z-index:30;
+}
+@media all and (min-width: 2000px){
+
+#idleComp iframe
+{
+	height: 1600px;
+	width: 2880px;
+}
+
+.instant
+{
+
+top: 560px;
+width: 2880px;
+font-size: 80px!important;
+min-height: 250px;
+
+}
+#instantImage
+{
+  height: 144px;
+  margin-top:2%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#instantMessage
+{
+  margin-top: 3%;
+}
+
+
+.moreTitle
+{
+margin-left: 40px;
+margin-right: 40px;
+font-size: 30px;
+padding-top: 15px;
+padding-bottom: 15px;
+position: relative;
+}
+.moreTitle img 
+{
+  width: 40px;
+}
+.moreTitle #titleText
+{
+  font-size: 45px;
+  white-space: pre-wrap;
+max-width: 750px;
+}
+#eventName
+{
+  width:650px!important;
+  font-size: 40px;
+  padding-left: 30px;
+}
+#eventDate
+{
+  width:250px!important;
+  font-size: 30px;
+  line-height: 40px;
+}
+#eventTime
+{
+  font-size: 30px;
+}
+
+
+  #moreServiceContainer {
+margin-left: 50px;
+margin-right: 50px;
+}
+
+.rowtable .service
+{
+  width: 200px!important;
+  padding-left: 30px;
+}
+.serviceName{
+  font-size: 40px;
+}
+.rowtable img{
+  width:100px;
+  margin-top: 15px;
+margin-bottom: 15px;
+}
+.infosubtext
+{
+  padding-left: 30px;
+}
+.rowtable
+{
+  font-size: 40px;
+  min-height:120px;
+}
+
+
+.adaPanelHeight {
+height: 900px !important;
+}
+  .idlePlayModule {
+  position: absolute;
+width: 2880px;
+height: 1600px;
+top: 558px;
+z-index: 100;
+}
+#location {
+height: 180px;
+}
+#rightLocation, #leftLocation
+{
+margin-top:15px;
+}
+#middleLocation
+{
+margin-top:27px;
+}
+#rightLocationText, #leftLocationText{
+	font-size: 115px;
+}
+#middleLocation{
+font-size:80px;
+}
+#middleLocation img{
+	width:auto;
+}
+#rightTable img, #leftTable img {
+	width:96px;
+	height:auto;
+}
+#header {
+height:368px;
+}
+#aside .paidAds {
+	height:307px;
+}
+#aside .paidAds  img{
+	width: 540px;
+margin-left: 50px;
+margin-top: 35px;
+}
+.paidAds img{
+	width:960px;
+
+}
+
+.freeAds ,.freeAds img{
+	width:960px;
+  height: 1600px;
+
+}
+#vendorData{
+	height:370px;
+}
+#container{
+	 background-size: 100% 368px;
+	height: 1970px;
+}
+#mapContent{
+	height:1600px;
+	width:100%;
+	/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #96A9BB 0%, #DBDBDB 50%, #DBDBDB 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #96A9BB 0%, #DBDBDB 50%, #DBDBDB 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #96A9BB 0%, #DBDBDB 50%, #DBDBDB 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #96A9BB), color-stop(0.5, #DBDBDB), color-stop(1, #DBDBDB));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #96A9BB 0%, #DBDBDB 50%, #DBDBDB 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #96A9BB 0%, #DBDBDB 50%, #DBDBDB 100%);
+}
+
+#mapContent img {
+height: 1600px;
+
+}
+#vendorName{
+	font-size:80px;
+	
+}
+
+#vendorTitle, #vendorDescription{
+	font-size:70px;
+}
+	#leftVendorDirection img, #rightVendorDirection img
+{
+	width:145px;
+	height:auto;
+	}
+	#leftVendorImage img, #rightVendorImage img
+{
+	width:250px;
+	height:250px;
+	}
+		.leftvendorLogo img, .rightvendorLogo img
+{
+	width:250px;
+	height:250px;
+	}
+	
+	#controlPanelUI {
+width: 1334px;
+/* height: 48vh; */
+height: 1050px;
+left: 100px;
+border-top: 5px solid #000;
+}
+
+#navigationContainer li {
+width: 200px;
+color: #323232;
+font-size: 30px;
+
+}
+#navigationContainer li img{
+width: 150px;
+}
+#scroller li{
+	line-height:70px;
+}
+.nearbyRow{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+#nearbyVendorName{
+	font-size: 40px;
+width: 640px;
+padding-left:45px;
+
+}
+#nearbyVendorDescription {
+	font-size:30px;
+  width:auto;
+ line-height: 40px;
+}
+#neabyLeftVendorImage, #neabyRightVendorImage {
+
+text-align:center;
+width:134px;
+
+}
+#neabyLeftVendorImage
+{
+	margin-right:30px;}
+	#nearbyRightVendorDirection
+	{
+		margin-right:30px;}
+#neabyLeftVendorImage img, #neabyRightVendorImage img{
+ width:100px;
+}
+#nearbyRightVendorDirection , #nearbyLeftVendorDirection  {
+
+text-align:left;
+width:50px;
+
+}
+#nearbyRightVendorDirection img, #nearbyLeftVendorDirection img{
+	width:50px;
+	
+	
+}
+#nearbyRightVendorDirection img[src=""],#nearbyLeftVendorDirection img[src=""] {
+    display: none;
+}
+
+
+#foodType
+{
+  position: relative;
+
+margin-bottom: 55px;
+}
+
+
+#foodHeader
+{
+  font-size: 45px;
+
+height: 100px;
+}
+
+#vendorDetailContent
+{
+  float: left;
+  width:60%;
+  font-size: 40px;
+  font-family: "DIN Engschrift Std";
+}
+	#vendorDetailImage
+  {
+    text-align: right;
+  }
+  #menuName
+  {
+    float: left;
+    width: 70%;
+  }
+  #vendorDetail
+  {
+  height: 400px;
+width: 85%;
+left: 15%;
+margin-top: 100px;
+position: relative; 
+}
+#vendorDetail button
+{
+ position: absolute;
+bottom: 0px;
+height: 15%;
+font-size: 36px;
+width: 100%;
+left: 0;
+background-color: black;
+color: white;
+}
+
+#hideEvent img
+{
+  height: 40px;
+float: right;
+margin-left: 20px;
+margin-top: 7px;
+
+}
+
+.eventDetails
+{
+  margin-top: 25px;
+
+}
+#hideEvent div
+{
+float: right;
+}
+#hideEvent
+{
+font-size: 40px;
+margin-bottom: 35px;
+height: 50px;
+padding-bottom: 20px;
+font-family: "DIN Engschrift Std";
+margin-right: 30px;
+}
+
+
+  #vendorDetailRow
+  {
+    height:50px;
+    margin-top: 10px;
+    margin-bottom:10px;
+  }
+  .rightArrow img
+  {
+    width: 40px;
+margin-top: 100%;
+  }
+.hide
+{
+  width: 300px;
+}
+  #bankLogo
+  {
+    height: 250px;
+    width: 650px;
+    margin-left: 300px;
+    margin-top: 60px;
+
+    border-left: 4px solid #5c5c5c;
+  }
+
+  #middleLocation div
+  {
+    margin-left: 60px;
+font-size: 70px;
+font-weight: bold;
+  }
+  #middleLocation img{
+    height: 115px;
+  }
+  .downArrow img
+  {
+  width: 40px;
+height: auto;
+
+  }
+
+.eventSlide
+{
+  margin-bottom: 60px;
+}
+
+#rightVendorDirection img
+{
+  margin-right: 50px;
+}
+.insideButton img
+{
+  float: right;
+width: 40px;
+height: auto;
+margin-top: 10px;
+margin-right: 35px;
+  
+}
+.logohide
+{
+  display: none!important;
+}
+
+.leafImage
+{
+  height: 200px;
+width: 95%;
+margin-left: 2.5%;
+margin-top: 30px;
+margin-bottom: 30px
+}
+
+#levelImage
+{
+ width: 125px;
+height: 125px!important;
+z-index: 400;
+position: absolute;
+margin-left: 2755px;
+}
+.accessbility{
+		border-radius:52px;
+		width:auto;
+		text-align:left;
+		margin-right:50px;
+	}
+	
+	#seatFinderWrapper .moreTitle .backButton{
+		display:none;
+		top:20px;
+	}
+	.topMsgtxt{
+		font-size: 35px;
+margin-bottom: 25px !important;
+border-bottom: 4px dotted #d6d6d6;
+padding: 20px;
+height:40px;
+		margin-left:50px;
+		margin-right:50px;
+		}
+		.mapImg{
+float:left;
+margin-right:20px;
+display:none;
+		}
+		
+		.seatfinderNav li{
+	font-family: "DIN Engschrift Std";
+	width:576px;
+	font-size:40px;
+	padding:21px;
+	margin-bottom:24px;
+	border:4px solid #50a1ec;
+	border-radius:20px;
+	}
+	#seatFinderTable{
+		
+	}
+	.listNumberContainer {
+width: 100%;
+height: 841px;
+margin-bottom:22px;
+	}
+	.seatFinderRowSelected{
+	
+	font-size:60px !important;
+}
+.non-selected{
+	font-size:40px ;
+}
+	.listNumberContainer .Seatband {
+
+height: 40px;
+
+
+
+padding: 35px;
+font-size: 40px;
+
+	}
+	.adaPanelHeight .listNumberContainer .Seatband {
+	
+	}
+	.seatFinderScroller li {
+		font-size:40px;
+		line-height: 60px;
+padding: 22px;
+text-align: center;
+margin-left: 220px;
+width: auto;
+max-width: 380px;
+padding-right: 0px;
+text-indent: -150px;
+	}
+	#SeatListWrapper{
+		top:371px;
+		bottom:380px;
+	}
+	.adaModeSecondTable{
+		top: 371px !important;
+		bottom:380px;
+	}
+	.listNumberADA  .adaModeSecondTable{
+		top: 211px !important;
+		bottom:380px;
+	}
+	.adaPanelHeight #SeatListWrapper {
+		top:211px !important;
+	}
+	.seatFinderFooter {
+		font-family: "DIN Engschrift Std";
+
+position:absolute;
+    width: 100%;
+    height: 100px;
+	background-color:#C4C4C4;
+		bottom:405px;
+	z-index:10;
+
+}
+.adaPanelHeight .seatFinderFooter{
+	bottom:80px;
+}
+.adaPanelHeight #categorySeatFinderWrapper{
+	height:600px;
+}
+.footerContainer{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+.nearEscScreenWrapper{
+	display:none;
+	width:100%;
+	height:100%;
+}
+
+.catBox{
+	    font-family: "DIN Engschrift Std";
+    width: auto;
+    height: auto;
+    margin: auto;
+    background-color: #4284c5;
+
+    color: #FFF;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 40px;
+	
+}
+.catBox1{
+	   
+    font-size: 50px;
+    
+}
+.catBox2{
+	
+    font-size: 70px;
+    
+}
+.catBoxWrapper{
+	display: block;
+	width:100%;
+	height:100%;
+	margin-top:20%;
+	text-align:center;
+}
+.panelMsg{
+	font-family: "DIN Engschrift Std";
+	font-size: 40px;
+	margin-top:50px;
+
+	margin-left:180px;
+	max-width:900px;
+	 height:auto; overflow:hidden;
+}
+.insideButton{
+	font-size:40px;
+	min-width:314px;
+	border-radius:15px;
+	 -moz-box-shadow:    0px 0px 0px 8px #000;
+  -webkit-box-shadow: 0px 0px 0px 8px #000;
+  box-shadow:         0px 0px 0px 8px #000;
+        border: 3px solid white;
+}
+.insideButton .buttonTab{
+	display: table;
+	height:100%;
+}
+.insideButton .buttonTab div{
+	display: inline-block;
+	vertical-align: middle;
+	height:100%;
+	}
+	.insideButton .buttonTab img{
+		float:none;
+	margin-top:0px;
+	vertical-align: middle;
+margin:0;
+margin-right:5px;
+margin-left:5px;
+	}
+.helpSection {
+font-size:35px;
+
+padding-top: 20px;
+}
+.helpContainer .title{
+	margin-left:50px;
+	float:left;
+	text-align:left;
+}
+.helpContainer .description{
+	width:620px;
+	display:none;
+	
+		}
+.helpContainer .title img{
+	width:50px;
+}
+.onOff{
+	padding:15px;
+}
+.onada{
+	padding:15px;
+}
+
+.offaccessbility{
+	width:300px;
+}
+.adaNav li{
+	font-size:25px;
+}
+#sideNav li img{
+	width:50px;
+}
+.refinedScreen{
+	margin-left: 50px;
+	margin-right:50px;
+	display:none;
+}
+.refinedScreen .refinedTable{
+		display:table;
+		width:100%;
+		margin-top:160px;
+		margin-bottom:50px;
+	}
+	.refinedScreen .refinedTable >div{
+		display:table-cell;
+		width:auto;
+		height:220px;
+		
+		
+		text-align:center;
+	}
+	.refinedTable img
+	{
+		width: 200px;
+		margin-left: 40px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.refinedScreen .refinedTable >div >div{
+		font-family: "DIN Engschrift Std";
+		width:220px;
+		height:170px;
+		
+		margin:auto;
+		background-color:#4284c5;
+		font-size:40px;
+		color:#FFF;
+		display:inline-block;
+		padding-top:50px;
+		vertical-align:middle;
+	}
+	.refinedScreen .refinedTable >div >div p{
+		font-size:50px;
+		margin:0px;
+		padding:0px;
+		font-weight:bolder;
+		color:#FFF;
+	}
+	.refineFooter{
+		border-top:2px solid #999;
+		padding-top:50px;
+		font-family: "AgencyFb";
+
+font-size: 30px;
+
+text-align: center;
+
+color:#282828
+	}
+	.backButton{
+		display:none;
+		position:static !important;
+		float:none;
+	}
+	.backButton img{
+		float:none;
+		vertical-align:middle;
+	}
+	.hideDetail{
+		position:absolute;
+		right:0px;
+		display:table;
+		
+	}
+	
+	.hideDetail img{
+		vertical-align:middle;
+		width:30px;
+		margin-left:10px;
+		height:30px;
+	}
+	.hideDetail div{
+		display:table-cell;
+	vertical-align:middle;
+	}
+	.leftArrow
+	{
+		float:none!important;
+	}
+	.premiumClass
+	{
+		border:4px solid #ff0000!important;
+		background-color:#dcdcdd;
+		background-image: url("Assets/style/imgs/premium.png");
+		background-repeat: repeat-x;
+	}
+	.seatfinderADA li
+	{
+		font-size: 24px!important;
+		padding: 12px!important;
+	}
+	.listNumberADA
+	{
+		height: 500px!important;
+		
+	}
+
+ #secondList .listNumberContainer
+	 {
+	 	
+	 }
+	 .head
+	 {
+	 	white-space: pre-wrap;
+max-width: 300px;
+	 }
+	 #searchUI{
+height:100px;
+}
+#wrapper
+{
+	margin-right:50px;margin-left:50px;
+}
+#contentPanel{
+	min-height:645px;
+}
+#navigationContainer{
+padding-top: 55px;
+padding-bottom: 45px;
+margin-left:50px;
+margin-right:50px;
+}
+.searchContainer >div{
+	font-size:30px;
+	
+	padding-left:50px;
+}
+.searchContainer >div >div{
+	display:inline-block;
+}
+.searchContainer img{
+	width:70px;
+	
+}
+.topNav li img{
+	margin-bottom:20px;
+}
+#navigationContainer li{
+	font-size:30px;
+	font-weight:bold;
+}
+#scrollers li {
+	border-bottom:4px dotted #c0c0c0;
+}
+.eventDetails{
+	
+	font-size:30px;
+}
+#foodType
+{
+  position: relative;
+
+margin-bottom: 10px;
+}
+#vendorDetailImage img
+{
+height: 340px;
+width: 300px;
+margin-right: 80px;
+margin-top: 35px;
+}
+
+#dietaryItem
+{
+ 
+padding:10px;
+font-size: 25px;
+border-radius: 30px;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+margin-right:15px;
+
+}
+#dietarySearch
+{
+ padding: 10px;
+font-size: 25px;
+border-radius: 30px;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+margin-right: 22px;
+
+}
+#dietarySearch img
+{
+height:40px;
+margin-left: 15px;
+}
+#foodHeader
+{
+  font-size: 30px;
+height: 85px;
+border-bottom: 2px solid #666;
+
+}
+#foodText
+{
+  
+}
+
+#vendorDetailContent
+{
+  float: left;
+  width:60%;
+  font-size: 30px;
+  font-family: "DIN Engschrift Std";
+}
+	#vendorDetailImage
+  {
+    text-align: right;
+
+  }
+  #menuName
+  {
+    float: left;
+    width: 70%;
+  }
+  .vendorDetail
+  {
+  height: 600px;
+margin-left:237px;
+display: none;
+
+}
+.vendorDetail .button
+{
+
+bottom: 40px;
+
+font-size: 40px;
+width:416px;
+padding:20px;
+color: white;
+}
+
+
+  #vendorDetailRow
+  {
+   height: 50px;
+   margin-bottom: 20px;
+  }
+#hideDetail
+{
+  font-size: 40px;
+ 
+  float: right;
+  
+  float:right;
+	font-weight:bold;
+}
+
+#detailHeader
+{
+	font-size: 40px;
+width: 100%;
+/* clear: left; */
+margin-bottom: 35px;
+height: 50px;
+padding-top: 20px;
+padding-bottom: 20px;
+border-bottom: 3px solid #666;
+}
+#detailHeader img
+{
+	height: 35px;
+float: right;
+margin-top: 10px;
+margin-left: 15px;
+}
+
+#hideDetail div
+{
+  float: left;
+}
+#menuDetail
+  {
+  height: auto;
+width: 85%;
+left: 15%;
+margin-top: 60px;
+position: relative; 
+}
+
+
+
+  #menuDetailRow
+  {
+    height:50px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    font-size: 40px !important;
+	border:none !important;
+  }
+
+#menuHideDetail
+{
+  font-size: 40px;
+ 
+  float: right;
+  
+  float:right;
+  font-weight:bold;
+}
+
+
+#menuHeader img
+{
+  height: 40px;
+float: right;
+margin-top: 6px;
+margin-left: 15px;
+}
+
+#menuHideDetail div
+{
+  float: left;
+}
+
+#menuHeader
+{
+  font-size: 40px;
+width: 100%;
+/* clear: left; */
+margin-bottom: 35px;
+padding-bottom: 10px;
+height: 50px;
+}
+.menuList
+{
+  border-bottom:1px dotted #666;
+}
+#searchText
+{
+  font-size: 40px;
+height: 40px;
+position: relative;
+margin-top: 0px;
+padding-left: 25%;
+}
+
+.searchList
+{
+  line-height: 50px!important;
+}
+#searchVendorName{
+  font-size: 40px;
+margin-top: 65px;
+margin-bottom: 65px;
+width: 40%
+}
+#searchVendorDescription {
+  font-size:30px;
+  width:60%;
+  margin-top: 65px;
+  margin-bottom: 65px;
+
+}
+
+
+#containerSearch
+{
+
+height: 660px;
+
+top:895px;
+}
+#searchScrollers li {
+ 
+  border-bottom:3px dotted #ccc;
+}
+
+
+#containerSearch
+{
+font-size: 40px;
+}
+#searchItemList {
+border-top: 3px solid #000000;
+  }
+
+
+.noResult
+{
+  font-size: 53px;
+   font-family: "DIN Engschrift Std";
+position: absolute;
+top: 30%;
+display: none;
+margin-left: 25px;
+margin-right: 25px;
+}
+.restroomRow
+{
+  padding-top: 20px;
+padding-bottom: 20px;
+}
+.restroomList
+{
+  line-height: 50px!important;
+}
+#restroomVendorName{
+font-size: 40px;
+width: 666px;
+padding-left: 45px;
+}
+#restroomVendorDescription {
+ font-size: 30px;
+width: auto;
+  
+}
+
+
+#containerrestroom
+{
+width: 100%;
+
+font-size: 40px;
+height: auto;
+position: absolute;
+z-index: 10;
+opacity: 1;
+bottom: 14%;
+}
+#restroomWrapper
+{
+
+border-top: 2px solid #666;
+
+}
+
+#restroomType
+{
+  position: relative;
+margin-top: 35px;
+margin-bottom: 55px;
+}
+
+#restroomLeftVendorImage, #restroomRightVendorImage{
+text-align: center;
+width: 134px;
+}
+#restroomLeftVendorImage img, #restroomRightVendorImage img {
+width: 100px;
+}
+#restroomRightVendorDirection, #restroomRightVendorDirection {
+text-align: left;
+width: 50px;
+}
+
+#restroomRightVendorDirection img, #restroomLeftVendorDirection img {
+width: 50px;
+}
+.merchandiseRow
+{
+  padding-top: 20px;
+padding-bottom: 20px;
+}
+.merchandiseList
+{
+  line-height: 50px!important;
+}
+#merchandiseVendorName{
+ font-size: 40px;
+width: 666px;
+padding-left: 27px;
+}
+#merchandiseVendorDescription {
+font-size: 30px;
+width: auto;
+line-height: 40px;
+  
+}
+
+
+#containermerchandise
+{
+width: 100%;
+
+font-size: 40px;
+height: auto;
+position: absolute;
+z-index: 10;
+opacity: 1;
+bottom: 14%;
+}
+#merchandiseWrapper
+{
+
+margin-right: 50px;
+margin-left: 50px;
+bottom: 100px;
+}
+
+#merchandiseType
+{
+  position: relative;
+margin-top: 35px;
+margin-bottom: 55px;
+}
+
+#merchandiseLeftVendorImage, #merchandiseRightVendorImage{
+text-align: center;
+width: 134px;
+}
+#merchandiseLeftVendorImage img, #merchandiseRightVendorImage img {
+width: 100px;
+}
+#merchandiseLeftVendorDirection, #merchandiseRightVendorDirection {
+text-align: left;
+width: 50px;
+}
+
+#merchandiseLeftVendorDirection img, #merchandiseRightVendorDirection img {
+width: 50px;
+}
+.highLightClass{
+	font-style:italic;
+	font-weight:bolder;
+	
+}
+.topBlur{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	left:0;
+	margin:auto;
+	width:535px;
+	height:50px;
+	 -webkit-filter: blur(25px);
+  -moz-filter: blur(25px);
+  -o-filter: blur(25px);
+  -ms-filter: blur(25px);
+  filter: blur(25px);
+  background-color:#c2d8ed;
+  z-index:1000;
+  -webkit-backface-visibility: hidden;
+}
+.shadow{
+}
+.bottomBlur{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	left:0;
+	margin:auto;
+	width:535px;
+	height:50px;
+	 -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  -o-filter: blur(20px);
+  -ms-filter: blur(20px);
+  filter: blur(20px);
+  background-color:#c2d8ed;
+   z-index:1000;
+   -webkit-backface-visibility: visible;
+}
+#extPage{
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10001;
+}
+.Item{
+		
+        min-width: 200px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+.subCell{
+	display:table-cell;
+	height:100%;
+	vertical-align:middle;
+}
+.greenclassHardCd{
+	display:table-cell;
+	background-color:#519f0e;
+	font-family: "DIN Engschrift Std";
+	height:166px;
+	width:166px;
+color:#FFFFFF;
+}
+.rowColorHardCd{
+	color: #519f0e;
+}
+.orangeclass  .clockDiv{
+	display:table-cell;
+	background-color:#eb7f01;
+	height:166px;
+	width:166px;
+color:#FFFFFF;
+}
+.greenclass .rowColor{
+	color: #519f0e;
+}
+.orangeclass .rowColor{
+	color: #eb7f01;
+}
+.numberBlock{
+	font-size: 100px;
+	text-align: center;
+	font-family: "DIN Engschrift Std";
+	font-weight: bold;
+	line-height:100px;
+}
+
+#minutesBlock{
+		font-family: "DIN Engschrift Std";
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+
+}
+#description{
+	 font-family: "DIN Engschrift Std";
+	margin-left: 30px;
+}
+#boundBlock{
+	 font-family: "DIN Engschrift Std";
+	font-size: 60px;
+	margin-left: 30px;
+	color: #6c6c6c;	
+	line-height: 100px;
+}
+
+#placeBlock{
+	 font-family: "DIN Engschrift Std";
+	float: left;
+	left: 30px;
+	font-size: 60px;
+	margin-left: 30px;
+
+}
+#timeBlock{
+	    font-family: "DIN Engschrift Std";
+	font-size: 45px;
+	margin-left: 30px;
+	color: #6c6c6c;	
+}
+
+}
+
+@media all and (max-width: 1920px)
+{
+	svg {
+		width:1440px;
+		height:800px;
+	}
+	#idleComp iframe
+	{
+		height: 800px;
+		width: 1440px;
+	}
+	.instant
+	{
+		font-size: 40px!important;
+		min-height: 125px;
+		top: 280px;
+		width: 1440px;
+	}
+	#instantImage
+	{
+		height: 72px;
+		margin-left: 25px;
+		margin-right: 25px;
+		margin-top: 1%;
+	}
+	#instantMessage
+	{
+		margin-top: 1.5%;
+	}
+	.operationAlert
+	{
+		
+	}
+	.operationAlert img
+	{
+		width: 158px;
+	}
+	#OperationAlertMessage
+	{
+		font-size: 30px;
+		
+	}
+	#OperationAlertTitle
+	{
+		font-size: 45px;
+	
+	}
+	.moreTitle
+	{
+		font-size: 15px;
+		margin-left: 20px;
+		margin-right: 20px;
+		padding-bottom: 7px;
+		padding-top: 7px;
+		position: relative;
+	}
+	.moreTitle img
+	{
+		width: 20px;
+	}
+	.moreTitle #titleText
+	{
+		font-size: 23px;
+		max-width: 340px;
+		white-space: pre-wrap;
+	}
+	#eventName
+	{
+		font-size: 20px;
+		padding-left: 15px;
+		width: 325px!important;
+	}
+	#eventDate
+	{
+		font-size: 15px;
+		line-height: 20px;
+		width: 125px!important;
+	}
+	#eventTime
+	{
+		font-size: 15px;
+	}
+	#moreServiceContainer
+	{
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+	.rowtable .service
+	{
+		padding-left: 15px;
+		width: 100px!important;
+	}
+	.serviceName
+	{
+		font-size: 20px;
+	}
+	.rowtable img
+	{
+		margin-bottom: 8px;
+		margin-top: 8px;
+		width: 50px;
+	}
+	.infosubtext
+	{
+		padding-left: 15px;
+	}
+	.rowtable
+	{
+		font-size: 20px;
+		min-height: 60px;
+	}
+	.adaPanelHeight
+	{
+		height: 450px !important;
+	}
+	.idlePlayModule
+	{
+		height: 800px;
+		position: absolute;
+		top: 279px;
+		width: 1440px;
+		z-index: 100;
+	}
+	#location
+	{
+		height: 90px;
+	}
+	#rightLocation, #leftLocation
+	{
+		margin-top: 7px;
+	}
+	#middleLocation
+	{
+		margin-top: 13px;
+	}
+	#rightLocationText, #leftLocationText
+	{
+		font-size: 58px;
+	}
+	#middleLocation
+	{
+		font-size: 40px;
+	}
+	#middleLocation img
+	{
+		width: 306px;
+	}
+	#rightTable img, #leftTable img
+	{
+		height: auto;
+		width: 48px;
+	}
+	#header
+	{
+		height: 180px;
+	}
+	#aside .paidAds
+	{
+		height: 154px;
+	}
+	#aside .paidAds img
+	{
+		margin-left: 25px;
+		margin-top: 18px;
+		width: 270px;
+	}
+	.paidAds img
+	{
+		width: 480px;
+	}
+	.freeAds ,.freeAds img
+	{
+		height: 800px;
+		width: 480px;
+	}
+	#vendorData
+	{
+		height: 185px;
+	}
+	#container
+	{
+		background-size: 100% 184px;
+		height: 980px;
+	}
+	#mapContent
+	{
+		background-image: linear-gradient(to bottom, #96A9BB 0%, #DBDBDB 50%, #DBDBDB 100%);
+		background-image: -moz-linear-gradient(top, #96A9BB 0%, #DBDBDB 50%, #DBDBDB 100%);
+		background-image: -ms-linear-gradient(top, #96A9BB 0%, #DBDBDB 50%, #DBDBDB 100%);
+		background-image: -o-linear-gradient(top, #96A9BB 0%, #DBDBDB 50%, #DBDBDB 100%);
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #96A9BB), color-stop(0.5, #DBDBDB), color-stop(1, #DBDBDB));
+		background-image: -webkit-linear-gradient(top, #96A9BB 0%, #DBDBDB 50%, #DBDBDB 100%);
+		height: 800px;
+		width: 100%;
+	}
+	#mapContent img
+	{
+		height: 800px;
+	}
+	#vendorName
+	{
+		font-size: 40px;
+	}
+	#vendorTitle, #vendorDescription
+	{
+		font-size: 35px;
+	}
+	#leftVendorDirection img, #rightVendorDirection img
+	{
+		height: auto;
+		width: 72px;
+	}
+	#leftVendorImage img, #rightVendorImage img
+	{
+		height: 125px;
+		width: 125px;
+	}
+	.leftvendorLogo img, .rightvendorLogo img
+	{
+		height: 125px;
+		width: 125px;
+	}	
+	#controlPanelUI
+	{
+		border-top: 5px solid #000;
+		height: 525px;
+		left: 50px;
+		width: 667px;
+	}
+	#navigationContainer li
+	{
+		color: #323232;
+		font-size: 15px;
+		width: 100px;
+	}
+	#navigationContainer li img
+	{
+		width: 75px;
+	}
+	#scroller li
+	{
+		line-height: 35px;
+	}	
+	.nearbyRow
+	{
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	#nearbyVendorName
+	{
+		font-size: 20px;
+		padding-left: 23px;
+		width: 320px;
+	}
+	#nearbyVendorDescription
+	{
+		font-size: 15px;
+		line-height: 20px;
+		width: auto;
+	}
+	#neabyLeftVendorImage, #neabyRightVendorImage
+	{
+		text-align: center;
+		width: 67px;
+	}
+	#neabyLeftVendorImage
+	{
+		margin-right: 15px;
+	}
+	#nearbyRightVendorDirection
+	{
+		margin-right: 15px;
+	}
+	#neabyLeftVendorImage img, #neabyRightVendorImage img
+	{
+		width: 50px;
+	}
+	#nearbyRightVendorDirection , #nearbyLeftVendorDirection
+	{
+		text-align: left;
+		width: 25px;
+	}
+	#nearbyRightVendorDirection img, #nearbyLeftVendorDirection img
+	{
+		width: 25px;
+	}
+	#foodType
+	{
+		margin-bottom: 28px;
+		position: relative;
+	}
+	#foodHeader
+	{
+		font-size: 23px;
+		height: 50px;
+	}
+	#vendorDetailContent
+	{
+		float: left;
+		font-family: "DIN Engschrift Std";
+		font-size: 20px;
+		width: 30%;
+	}
+	#vendorDetailImage
+	{
+		text-align: right;
+	}
+	#menuName
+	{
+		float: left;
+		width: 35%;
+	}
+	#vendorDetail
+	{
+		height: 200px;
+		left: 7.5%;
+		margin-top: 50px;
+		position: relative;
+		width: 42.5%;
+	}
+	#vendorDetail button
+	{
+		background-color: black;
+		bottom: 0px;
+		color: white;
+		font-size: 18px;
+		height: 7.5%;
+		left: 0;
+		position: absolute;
+		width: 100%;
+	}
+	#hideEvent img
+	{
+		float: right;
+		height: 20px;
+		margin-left: 10px;
+		margin-top: 4px;
+	}
+	.eventDetails
+	{
+		margin-top: 13px;
+	}
+	#hideEvent div
+	{
+		float: right;
+	}
+	#hideEvent
+	{
+		font-family: "DIN Engschrift Std";
+		font-size: 20px;
+		height: 25px;
+		margin-bottom: 17px;
+		margin-right: 15px;
+		padding-bottom: 10px;
+	}
+	#vendorDetailRow
+	{
+		height: 25px;
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+	.rightArrow img
+	{
+		margin-top: 100%;
+		width: 20px;
+	}
+	.hide
+	{
+		width: 150px;
+	}
+	#bankLogo
+	{
+		border-left: 4px solid #5c5c5c;
+		height: 125px;
+		margin-left: 150px;
+		margin-top: 22px;
+		width: 325px;
+	}
+	#middleLocation div
+	{
+		font-size: 35px;
+		font-weight: bold;
+		margin-left: 30px;
+	}
+	#middleLocation img
+	{
+		height: 58px;
+	}
+	.downArrow img
+	{
+		height: auto;
+		width: 20px;
+	}
+	.eventSlide
+	{
+		margin-bottom: 30px;
+	}
+	#rightVendorDirection img
+	{
+		margin-right: 25px;
+	}
+	.insideButton img
+	{
+		float: right;
+		height: auto;
+		margin-right: 18px;
+		margin-top: 5px;
+		width: 20px;
+	}
+	.logohide
+	{
+		display: none!important;
+	}
+	.leafImage
+	{
+		height: 100px;
+		margin-bottom: 15px;
+		margin-left: 1.25%;
+		margin-top: 15px;
+		width: 47.5%;
+	}
+	#levelImage
+	{
+		height: 63px!important;
+		margin-left: 1378px;
+		position: absolute;
+		width: 63px;
+		z-index: 400;
+	}
+	.accessbility
+	{
+		border-radius: 52px;
+		margin-right: 25px;
+		text-align: left;
+		width: auto;
+	}
+	#seatFinderWrapper .moreTitle .backButton
+	{
+		display: none;
+		top: 10px;
+	}
+	.topMsgtxt
+	{
+		border-bottom: 2px dotted #d6d6d6;
+		font-size: 18px;
+		height: 20px;
+		margin-bottom: 12px !important;
+		margin-left: 25px;
+		margin-right: 25px;
+		padding: 10px;
+	}
+	.mapImg
+	{
+		display: none;
+		float: left;
+		margin-right: 10px;
+		width:278px;
+	}
+	.seatfinderNav li
+	{
+		border: 2px solid #50a1ec;
+		border-radius: 20px;
+		font-family: "DIN Engschrift Std";
+		font-size: 20px;
+		margin-bottom: 12px;
+		padding: 10px;
+		width: 288px;
+	}
+	#seatFinderTable
+	{
+		
+	}
+	.listNumberContainer
+	{
+		height: 358px;
+		margin-bottom: 11px;
+		width: 296px;
+	}
+	.seatFinderRowSelected
+	{
+		font-size: 30px !important;
+	}
+	.non-selected
+	{
+		font-size: 20px;
+	}
+	.listNumberContainer .Seatband
+	{
+		font-size: 20px;
+		height: 20px;
+		left: 8px;
+		padding: 17px;
+		right: 5px;
+		top: 154px;
+		width: auto;
+	}
+	.adaPanelHeight .listNumberContainer .Seatband {
+		top:109px;
+	}
+	.seatFinderScroller li
+	{
+		font-size: 20px;
+		line-height: 30px;
+		margin-left: 175px;
+		max-width: 190px;
+		padding: 11px;
+		padding-right: 0px;
+		text-align: center;
+		text-indent: -150px;
+		width: auto;
+	}
+	#SeatListWrapper,#SeatListWrapper1,#SeatListWrapper2
+	{
+		bottom: 330px;
+		
+	}
+	
+	.adaPanelHeight #SeatListWrapper {
+		top:111px !important;
+	}
+	.seatFinderFooter
+	{
+		border-top: 2px solid #999;
+		font-family: "DIN Engschrift Std";
+	
+		margin-top: 5px;
+		padding-top: 16px;
+	}
+	.insideButton
+	{
+		border: 2px solid white;
+		border-radius: 15px;
+		box-shadow: 0px 0px 0px 8px #000;
+		font-size: 16px;
+		min-width: 157px;
+		moz-box-shadow: 0px 0px 0px 8px #000;
+		webkit-box-shadow: 0px 0px 0px 8px #000;
+	}
+	.insideButton .buttonTab
+	{
+		display: table;
+		height: 100%;
+	}
+	.insideButton .buttonTab div
+	{
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+	.insideButton .buttonTab img
+	{
+		float: none;
+		margin: 0;
+		margin-left: 2px;
+		margin-right: 2px;
+		margin-top: 0px;
+		vertical-align: middle;
+	}
+	.helpSection
+	{
+		font-size: 18px;
+		padding-top: 10px;
+	}
+	.helpContainer .title
+	{
+		float: left;
+		text-align: left;
+	}
+	.helpContainer .description
+	{
+		display: none;
+		width: 310px;
+	}
+	.helpContainer .title img
+	{
+		width: 25px;
+	}
+	.onOff
+	{
+		padding: 8px;
+	}
+	.onada
+	{
+		padding: 8px;
+	}
+	.adaNav li
+	{
+		font-size: 10px;
+		padding-top:8px;
+	}
+	.offaccessbility
+	{
+		width: 150px;		
+	}
+	#sideNav li img
+	{
+		width: 25px;
+	}
+	.refinedScreen
+	{
+		display: none;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+	.refinedScreen .refinedTable
+	{
+		display: table;
+		margin-bottom: 25px;
+		margin-top: 80px;
+		width: 100%;
+	}
+	.refinedScreen .refinedTable >div
+	{
+		display: table-cell;
+		height: 110px;
+		text-align: center;
+		width: auto;
+	}
+	.refinedTable img
+	{
+		display: inline-block;
+		margin-left: 20px;
+		vertical-align: middle;
+		width: 100px;
+	}
+	.refinedScreen .refinedTable >div >div
+	{
+		background-color: #4284c5;
+		color: #FFF;
+		display: inline-block;
+		font-family: "DIN Engschrift Std";
+		font-size: 20px;
+		height: 85px;
+		margin: auto;
+		padding-top: 25px;
+		vertical-align: middle;
+		width: 110px;
+	}
+	.refinedScreen .refinedTable >div >div p
+	{
+		color: #FFF;
+		font-size: 25px;
+		font-weight: bolder;
+		margin: 0px;
+		padding: 0px;
+	}
+	.refineFooter
+	{
+		border-top: 2px solid #999;
+		color: #282828;
+		font-family: "AgencyFb";
+		font-size: 15px;
+		padding-top: 25px;
+		text-align: center;
+	}
+	.backButton
+	{
+		display: none;
+		float: none;
+		position: static !important;
+	}
+	.backButton img
+	{
+		float: none;
+		vertical-align: middle;
+	}
+	.hideDetail
+	{
+		display: table;
+		position: absolute;
+		right: 0px;
+	}
+	.hideDetail img
+	{
+		height: 15px;
+		margin-left: 5px;
+		vertical-align: middle;
+		width: 15px;
+	}
+	.hideDetail div
+	{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.leftArrow
+	{
+		float: none!important;
+	}
+	.premiumClass
+	{
+		background-color: #dcdcdd;
+		background-image: url("Assets/style/imgs/premium.png");
+		background-repeat: repeat-x;
+		border: 2px solid #ff0000!important;
+	}
+	.seatfinderADA li
+	{
+		font-size: 12px!important;
+		padding: 6px!important;
+	}
+	.listNumberADA
+	{
+		height: 250px!important;
+	}
+	#secondList .listNumberContainer
+	{
+		margin-left: -13px;
+	}
+	.head
+	{
+		max-width: 150px;
+		white-space: pre-wrap;
+	}
+	#searchUI
+	{
+		height: 68px;
+	}
+	.adaPanelHeight #searchUI {
+		height:55px;
+	}
+	#wrapper
+	{
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+	#contentPanel
+	{
+		min-height: 322px;
+	}
+	#navigationContainer
+	{
+		margin-left: 25px;
+		margin-right: 25px;
+		padding-bottom: 22px;
+		padding-top: 27px;
+	}
+	.searchContainer >div
+	{
+		font-size: 15px;
+		padding-left: 25px;
+	}
+	.searchContainer >div >div
+	{
+		display: inline-block;
+	}
+	.searchContainer img
+	{
+		width: 35px;
+	}
+	.topNav li img
+	{
+		margin-bottom: 10px;
+	}
+	#navigationContainer li
+	{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	#scrollers li
+	{
+		border-bottom: 2px dotted #c0c0c0;
+	}
+	.eventDetails
+	{
+		font-size: 15px;
+	}
+	#foodType
+	{
+		margin-bottom: 5px;
+		position: relative;
+	}
+	#vendorDetailImage img
+	{
+		height: 170px;
+		margin-right: 40px;
+		margin-top: 18px;
+		width: 150px;
+	}
+	#dietaryItem
+	{
+		border-radius: 30px;
+		font-size: 13px;
+		margin-right: 8px;
+		moz-border-radius: 30px;
+		padding: 5px;
+		webkit-border-radius: 30px;
+	}
+	#dietarySearch
+	{
+		border-radius: 30px;
+		font-size: 13px;
+		margin-right: 11px;
+		moz-border-radius: 30px;
+		padding: 5px;
+		webkit-border-radius: 30px;
+	}
+	#dietarySearch img
+	{
+		height: 20px;
+		margin-left: 8px;
+	}
+	#foodHeader
+	{
+		border-bottom: 1px solid #666;
+		font-size: 15px;
+		height: 42px;
+	}
+	#foodText
+	{
+	}
+	#vendorDetailContent
+	{
+		float: left;
+		font-family: "DIN Engschrift Std";
+		font-size: 15px;
+		width: 60%;
+	}
+	#vendorDetailImage
+	{
+		text-align: right;
+	}
+	#menuName
+	{
+		float: left;
+		width: 70%;
+	}
+	.vendorDetail
+	{
+		display: none;
+		height: 300px;
+		margin-left: 118px;
+	}
+	.vendorDetail .button
+	{
+		bottom: 20px;
+		color: white;
+		font-size: 16px;
+		padding: 8px;
+		width: 170px;
+	}
+	#vendorDetailRow
+	{
+		height: 25px;
+		margin-bottom: 10px;
+	}
+	#hideDetail
+	{
+		float: right;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	#detailHeader
+	{
+		border-bottom: 2px solid #666;
+		font-size: 20px;
+		height: 25px;
+		margin-bottom: 18px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		width: 100%;
+	}
+	#detailHeader img
+	{
+		float: right;
+		height: 18px;
+		margin-left: 8px;
+		margin-top: 5px;
+	}
+	#hideDetail div
+	{
+		float: left;
+	}
+	#menuDetail
+	{
+		height: auto;
+		left: 15%;
+		margin-top: 30px;
+		position: relative;
+		width: 85%;
+	}
+	#menuDetailRow
+	{
+		border: none !important;
+		font-size: 20px !important;
+		height: 25px;
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+	#menuHideDetail
+	{
+		float: right;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	#menuHeader img
+	{
+		float: right;
+		height: 20px;
+		margin-left: 8px;
+		margin-top: 3px;
+	}
+	#menuHideDetail div
+	{
+		float: left;
+	}
+	#menuHeader
+	{
+		font-size: 20px;
+		height: 25px;
+		margin-bottom: 18px;
+		padding-bottom: 5px;
+		width: 100%;
+		border-bottom:2px solid #666;
+	}
+	.menuList
+	{
+		border-bottom: 1px dotted #666;
+	}
+	#searchText
+	{
+		font-size: 20px;
+		height: 20px;
+		margin-top: 0px;
+		padding-left: 12.5%;
+		position: relative;
+	}
+	.searchList
+	{
+		line-height: 25px!important;
+	}
+	#searchVendorName
+	{
+		font-size: 20px;
+		margin-bottom: 32px;
+		margin-top: 32px;
+		width: 40%;
+	}
+	#searchVendorDescription
+	{
+		font-size: 15px;
+		margin-bottom: 32px;
+		margin-top: 32px;
+		width: 60%;
+	}
+	#containerSearch
+	{
+		height: 330px;
+		top: 448px;
+	}
+	.adaPanelHeight #containerSearch {
+		top:120px !important;
+	}
+	#searchScrollers li
+	{
+		border-bottom: 2px dotted #ccc;
+	}
+	#containerSearch
+	{
+		font-size: 20px;
+	}
+	#searchItemList
+	{
+		border-top: 2px solid #000000;
+	}
+	.noResult
+	{
+		display: none;
+		font-family: "DIN Engschrift Std";
+		font-size: 26px;
+		margin-left: 13px;
+		margin-right: 13px;
+		position: absolute;
+		top: 15%;
+	}
+	.restroomRow
+	{
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	.restroomList
+	{
+		line-height: 25px!important;
+	}
+	#restroomVendorName
+	{
+		font-size: 20px;
+		padding-left: 22px;
+		width: 333px;
+	}
+	#restroomVendorDescription
+	{
+		font-size: 15px;
+		width: auto;
+	}
+	#containerrestroom
+	{
+		bottom: 7%;
+		font-size: 20px;
+		height: auto;
+		opacity: 1;
+		position: absolute;
+		width: 100%;
+		z-index: 10;
+	}
+	#restroomWrapper
+	{
+		border-top: 2px solid #666;
+	}
+	#restroomType
+	{
+		margin-bottom: 28px;
+		margin-top: 18px;
+		position: relative;
+	}
+	#restroomLeftVendorImage, #restroomRightVendorImage
+	{
+		text-align: center;
+		width: 67px;
+	}
+	#restroomLeftVendorImage img, #restroomRightVendorImage img
+	{
+		width: 50px;
+	}
+	#restroomRightVendorDirection, #restroomRightVendorDirection
+	{
+		text-align: left;
+		width: 25px;
+	}
+	#restroomRightVendorDirection img, #restroomLeftVendorDirection img
+	{
+		width: 25px;
+	}
+	.merchandiseRow
+	{
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	.merchandiseList
+	{
+		line-height: 25px!important;
+	}
+	#merchandiseVendorName
+	{
+		font-size: 20px;
+		padding-left: 13px;
+		width: 333px;
+	}
+	#merchandiseVendorDescription
+	{
+		font-size: 15px;
+		line-height: 20px;
+		width: auto;
+	}
+	#containermerchandise
+	{
+		bottom: 7%;
+		font-size: 20px;
+		height: auto;
+		opacity: 1;
+		position: absolute;
+		width: 100%;
+		z-index: 10;
+	}
+	#merchandiseWrapper
+	{
+		bottom: 50px;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+	#merchandiseType
+	{
+		margin-bottom: 28px;
+		margin-top: 18px;
+		position: relative;
+	}
+	#merchandiseLeftVendorImage, #merchandiseRightVendorImage
+	{
+		text-align: center;
+		width: 67px;
+	}
+	#merchandiseLeftVendorImage img, #merchandiseRightVendorImage img
+	{
+		width: 50px;
+	}
+	#merchandiseLeftVendorDirection, #merchandiseRightVendorDirection
+	{
+		text-align: left;
+		width: 25px;
+	}
+	#merchandiseLeftVendorDirection img, #merchandiseRightVendorDirection img
+	{
+		width: 25px;
+	}
+	.highLightClass
+	{
+		font-style: italic;
+		font-weight: bolder;
+	}
+	.topBlur
+	{
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+		left:0;
+		margin:auto;
+		width:267px;
+		height:25px;
+		-webkit-filter: blur(25px);
+		-moz-filter: blur(25px);
+		-o-filter: blur(25px);
+		-ms-filter: blur(25px);
+		filter: blur(25px);
+		background-color:#c2d8ed;
+		z-index:1000;
+		-webkit-backface-visibility: hidden;  
+	}
+	.shadow
+	{
+	}
+	.bottomBlur
+	{	
+		position:absolute;
+		bottom:0;
+		left:0;
+		right:0;
+		left:0;
+		margin:auto;
+		width:267px;
+		height:25px;
+		-webkit-filter: blur(20px);
+		-moz-filter: blur(20px);
+		-o-filter: blur(20px);
+		-ms-filter: blur(20px);
+		filter: blur(20px);
+		background-color:#c2d8ed;
+		z-index:1000;
+		-webkit-backface-visibility: visible;
+	}
+	.downArrow {
+		width:25px;
+	}
+	#findText {
+		font-size:14px;
+		margin-left:20px;
+	}
+	#leafInfo {
+		line-height:25px;
+		font-size:15px;
+	}
+	#menuDetailContent{
+	height:300px;
+	}
+}

@@ -1,0 +1,379 @@
+
+#vendorDetailContent
+{
+  float: left;
+  width:65%;
+  font-size: 15px;
+  font-family: "DIN Engschrift Std";
+}
+	#vendorDetailImage
+  {
+    text-align: right;
+  }
+  #menuName
+  {
+    float: left;
+    width: 50%;
+  }
+  .vendorDetail
+  {
+  margin-left: 93px;
+display: none;
+min-height: 250px;
+position: relative;
+}
+.vendorDetail .button
+{
+ position: absolute;
+bottom: 20px;
+left:0;
+font-size: 12px;
+
+color: white;
+}
+
+#dietaryItem
+{
+ 
+font-family: "AgencyFb";
+  background: #ffcb5b;
+border-radius: 20px;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+display:inline-block;
+padding:4px;
+font-size: 12px;
+margin-right:10px;
+font-weight:normal;
+margin-top: 10px;
+}
+#dietarySearch
+{
+font-family: "AgencyFb";
+background: #ffcb5b;
+border-radius: 20px;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+display: inline-block;
+padding: 4px;
+font-size: 12px;
+margin-right: 10px;
+font-weight: normal;
+
+
+
+}
+.dietarySearchWrap{
+	display:table;
+	
+}
+.dietarySearchWrap img{
+	vertical-align:middle;
+}
+.dietarySearchWrap div{
+	display:inline;
+	vertical-align:middle;
+}
+#dietarySearch img
+{
+height:12px;
+}
+  #vendorDetailRow
+  {
+    height:30px;
+    margin-top: 5px;
+    margin-bottom:5px;
+  }
+#hideDetail
+{
+  font-size: 15px;
+ 
+  float: right;
+  
+margin-right: 14px;
+	font-weight:bold;
+}
+#vendorDetailImage img
+{
+height: 100px;
+}
+#detailHeader
+{
+	font-size: 15px;
+width: 100%;
+/* clear: left; */
+margin-bottom: 15px;
+height: 30px;
+border-bottom: 1px solid #666;
+}
+#detailHeader img
+{
+	height: 20px;
+}
+.menuPage
+{
+  position: absolute;
+  height: 100%;
+ font-family: "DIN Engschrift Std";
+ color:#333333;
+  display: none;
+z-index: 1;
+top: 0px;
+bottom: 0px;
+left: 5%;
+width: 90%%;
+}
+.menuList
+{
+  border-bottom:1px dotted #666;
+}
+
+
+#menuDetail
+  {
+    height: auto;
+    width: 85%;
+    left: 15%;
+    margin-top: 30px;
+    position: relative; 
+  }
+
+
+
+  #menuDetailRow
+  {
+    height:15px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    font-size: 15px;
+  }
+
+#menuHideDetail
+{
+  font-size: 15px;
+ 
+  float: right;
+  
+  float:right;
+  font-weight:bold;
+}
+
+#menuHeader
+{
+  font-size: 20px;
+width: 100%;
+/* clear: left; */
+margin-bottom: 15px;
+height: 50px;
+border-bottom: 3px solid #666;
+}
+#menuHeader img
+{
+  height: 20px;
+}
+#foodHeader {
+font-size: 15px;
+height: 30px;
+border-bottom: 1px solid #666;
+margin-top: 10px;
+color: #323232;
+font-family: "DIN Engschrift Std";
+}
+
+
+
+
+
+
+
+@media all and (min-width: 2000px){
+
+
+#foodType
+{
+  position: relative;
+
+margin-bottom: 10px;
+}
+#vendorDetailImage img
+{
+height: 340px;
+width: 300px;
+margin-right: 80px;
+margin-top: 35px;
+}
+
+#dietaryItem
+{
+ 
+padding:10px;
+font-size: 25px;
+border-radius: 30px;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+margin-right:15px;
+
+}
+#dietarySearch
+{
+ padding: 10px;
+font-size: 25px;
+border-radius: 30px;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+margin-right: 22px;
+
+}
+#dietarySearch img
+{
+height:40px;
+margin-left: 15px;
+}
+#foodHeader
+{
+  font-size: 30px;
+height: 85px;
+border-bottom: 2px solid #666;
+
+}
+#foodText
+{
+  
+}
+
+#vendorDetailContent
+{
+  float: left;
+  width:40%;
+  font-size: 30px;
+  font-family: "DIN Engschrift Std";
+}
+	#vendorDetailImage
+  {
+    text-align: right;
+
+  }
+  #menuName
+  {
+    float: left;
+    width: 50%;
+  }
+  .vendorDetail
+  {
+  height: 600px;
+margin-left:237px;
+display: none;
+
+}
+.vendorDetail .button
+{
+
+bottom: 40px;
+
+font-size: 40px;
+width:416px;
+padding:20px;
+color: white;
+}
+
+
+  #vendorDetailRow
+  {
+   height: 50px;
+   margin-bottom: 20px;
+  }
+#hideDetail
+{
+  font-size: 40px;
+ 
+  float: right;
+  
+  float:right;
+	font-weight:bold;
+}
+
+#detailHeader
+{
+	font-size: 40px;
+width: 100%;
+/* clear: left; */
+margin-bottom: 35px;
+height: 50px;
+padding-top: 20px;
+padding-bottom: 20px;
+border-bottom: 3px solid #666;
+}
+#detailHeader img
+{
+	height: 35px;
+float: right;
+margin-top: 10px;
+margin-left: 15px;
+}
+
+#hideDetail div
+{
+  float: left;
+}
+#menuDetail
+  {
+  height: auto;
+width: 85%;
+left: 15%;
+margin-top: 60px;
+position: relative; 
+}
+
+
+
+  #menuDetailRow
+  {
+    height:50px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    font-size: 40px;
+  }
+
+#menuHideDetail
+{
+  font-size: 40px;
+ 
+  float: right;
+  
+  float:right;
+  font-weight:bold;
+}
+
+
+#menuHeader img
+{
+  height: 40px;
+float: right;
+margin-top: 6px;
+margin-left: 15px;
+}
+
+#menuHideDetail div
+{
+  float: left;
+}
+
+#menuHeader
+{
+  font-size: 40px;
+width: 100%;
+/* clear: left; */
+margin-bottom: 35px;
+padding-bottom: 10px;
+height: 50px;
+}
+.menuList
+{
+  border-bottom:1px dotted #666;
+}
+
+
+
+
+
+}
